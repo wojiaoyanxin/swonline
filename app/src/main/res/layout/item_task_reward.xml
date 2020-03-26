@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="128dp"
+    android:layout_height="142dp"
+    android:layout_marginLeft="20dp"
+    android:background="@drawable/item_taskreward"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/coupon_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_13sp" />
+
+    <TextView
+        android:id="@+id/lingqu"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="去领取"
+        android:textColor="#272A30"
+        android:textSize="@dimen/text_14sp" />
+
+</LinearLayout>

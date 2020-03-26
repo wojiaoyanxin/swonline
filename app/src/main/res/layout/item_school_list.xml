@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_school_item"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/school_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="北京大学"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/school_name_en"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/text999"
+                android:textSize="@dimen/sp_12" />
+
+
+        </LinearLayout>
+
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/ll_lable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="1dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            android:orientation="horizontal"/>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pricemax"
+                android:layout_marginLeft="15dp"
+                android:text="学费范围: "
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/pricemax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv"
+                android:text="¥10万-12万"
+                android:textColor="#BE9F64"
+                android:textSize="@dimen/sp_16" />
+
+            <!--#BE9F64-->
+            <com.cb.ratingbar.CBRatingBar
+                android:id="@+id/starbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="26dp"
+                app:starCanTouch="false"
+                app:starCount="5"
+                app:starCoverColor="#BE9F64"
+                app:starFillColor="#ff343840"
+                app:starProgress="20"
+                app:starShowStroke="true"
+                app:starSize="12dp"
+                app:starSpace="5dp"
+                android:layout_alignBottom="@+id/tv"
+                app:starStrokeColor="#BE9F64" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv"
+                android:layout_toLeftOf="@+id/starbar"
+                android:text="录取难度:  "
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="贝翰文大学（Belhaven University，简称BU）建校于1883年，至今已有135年悠久的办学历史，拥有南部院校联盟（SACS）认证，是中国教育部涉外监管网认可大学。BU长年保持着较高的毕业生就业率。其商科专业在美国也属于一流水平。U.S News南部大学排名78位，在线本科项目全美199名，在线MBA项目全美205名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/read_counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/xingzhuang"
+                android:drawablePadding="2dp"
+                android:text="浏览人数: 2345"
+                android:textColor="@color/text999"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape_btn_enable"
+                android:gravity="center"
+                android:text="了解更多信息 ▶"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

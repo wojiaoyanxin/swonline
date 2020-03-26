@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sunlands.intl.yingshi.ui.question.view.CheckableConstraintLayout android:id="@+id/ccl_options_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="23dp"
+    android:paddingBottom="23dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="#F5F9FC"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <io.github.kexanie.library.MathView
+        android:id="@+id/mv_options_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/iv_question_state"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+</com.sunlands.intl.yingshi.ui.question.view.CheckableConstraintLayout>

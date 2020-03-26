@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <SeekBar
+        android:id="@+id/fragment_video_float_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:maxHeight="4dp"
+        android:progressDrawable="@drawable/video_float_progress_drawable"
+        android:thumb="@drawable/shape_player_thumb" />
+
+    <TextView
+        android:id="@+id/fragment_video_float_tv_curtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="00:00"
+        android:textColor="#888888"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/fragment_video_float_tv_fulltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fragment_video_float_tv_curtime"
+        android:layout_below="@+id/fragment_video_float_seekbar"
+        android:layout_toRightOf="@+id/fragment_video_float_tv_curtime"
+        android:text="/00:00"
+        android:textColor="#666666"
+        android:textSize="10sp" />
+
+</RelativeLayout>

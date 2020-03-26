@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.shangde.lepai.uilib.view.RoundImageView
+        android:id="@+id/item_riv_mail_userhead"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/ic_avatar_default"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/item_tv_mail_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:text="站内信"
+        android:textColor="@color/cl_333333"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/item_riv_mail_userhead"
+        app:layout_constraintLeft_toRightOf="@id/item_riv_mail_userhead"
+        app:layout_constraintTop_toTopOf="@id/item_riv_mail_userhead"
+        />
+
+    <TextView
+        android:id="@+id/item_tv_mail_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="14dp"
+        android:text="您发起的美国汉文大学—MBA专业的入学您发 文大学—MBA专业的入学，您发起的美国汉文 专业的入学您发起的美国汉文大学—M的入"
+        android:textColor="@color/cl_333333"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/item_tv_mail_username"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_riv_mail_userhead"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_rv_mail_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="14dp"
+        android:background="#F3F3F5"
+        app:layout_constraintLeft_toLeftOf="@id/item_tv_mail_username"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_tv_mail_content"></android.support.v7.widget.RecyclerView>
+    <View
+        android:id="@+id/view_see_more_line"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        app:layout_constraintLeft_toLeftOf="@id/item_tv_mail_username"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="14dp"
+        android:background="@color/cl_dddddd"
+        app:layout_constraintTop_toBottomOf="@id/item_rv_mail_comment"
+        />
+    <TextView
+        android:id="@+id/item_tv_see_more"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        app:layout_constraintLeft_toLeftOf="@id/item_tv_mail_username"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_see_more_line"
+        android:layout_marginRight="14dp"
+        android:background="#F3F3F5"
+        android:text="查看更多"
+        android:textSize="12sp"
+        android:textColor="@color/cl_999999"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/item_mail_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="昨天12:0"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/item_tv_mail_username"
+        app:layout_constraintTop_toBottomOf="@id/item_tv_see_more"
+        />
+
+    <ImageView
+        android:id="@+id/item_iv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="-10dp"
+        android:src="@drawable/iv_mail_reply_msg"
+        app:layout_constraintBottom_toBottomOf="@id/item_mail_time"
+        app:layout_constraintRight_toRightOf="@id/item_tv_mail_content"
+        app:layout_constraintTop_toTopOf="@id/item_mail_time"
+        />
+</android.support.constraint.ConstraintLayout>

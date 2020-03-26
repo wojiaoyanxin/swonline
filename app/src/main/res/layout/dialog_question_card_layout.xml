@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <ImageView
+        android:id="@+id/iv_dialog_q_directory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_q_directory"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_dialog_q_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="答题卡"
+        android:textColor="#ff282828"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog_q_directory"
+        app:layout_constraintLeft_toRightOf="@id/iv_dialog_q_directory"
+        app:layout_constraintTop_toTopOf="@id/iv_dialog_q_directory" />
+
+    <TextView
+        android:id="@+id/tv_dialog_q_not_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="还有25道题未题"
+        android:textColor="#ff282828"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog_q_directory"
+        app:layout_constraintLeft_toRightOf="@id/tv_dialog_q_card"
+        app:layout_constraintTop_toTopOf="@id/iv_dialog_q_directory" />
+
+    <ImageView
+        android:id="@+id/iv_dialog_q_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_dialog_close"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog_q_directory"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_dialog_q_directory"
+        />
+
+    <View
+        android:id="@+id/v_dialog_q_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="18dp"
+        android:background="#eee"
+        app:layout_constraintTop_toBottomOf="@id/iv_dialog_q_directory" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_dialog_q_card"
+        app:layout_constraintTop_toBottomOf="@id/v_dialog_q_line"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="0dp" />
+</android.support.constraint.ConstraintLayout>

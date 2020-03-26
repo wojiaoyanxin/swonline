@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_44dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/vg_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding_12dp"
+        android:paddingEnd="@dimen/padding_12dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back_black" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text=""
+        android:ellipsize="end"
+        android:textColor="@color/text333"
+        android:textSize="@dimen/text_18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_header_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/margin_12dp"
+        android:gravity="center"
+        android:padding="@dimen/padding_4dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_17sp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/margin_12dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

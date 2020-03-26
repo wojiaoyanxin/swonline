@@ -1,0 +1,142 @@
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left_check" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_left_line_liang" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_shulianchengdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已掌握"
+                android:textColor="@color/cl_666666"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/cl_ebebeb" />
+
+            <TextView
+                android:id="@+id/tv_pinlv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中频"
+                android:textColor="@color/cl_666666"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_x1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/ic_liangxing" />
+
+            <ImageView
+                android:id="@+id/iv_x2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_liangxing" />
+
+            <ImageView
+                android:id="@+id/iv_x3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_liangxing" />
+
+            <ImageView
+                android:id="@+id/iv_x4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_liangxing" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lines="1"
+            android:text="知识点1:社会主义从空义学的发展科学的发展"
+            android:textColor="@color/cl_282828"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_lianxi"
+                android:layout_width="100dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:text="练习0/10题"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_tingke"
+                android:layout_width="100dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="听课5min"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

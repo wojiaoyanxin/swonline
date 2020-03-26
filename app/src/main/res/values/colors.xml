@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#EFB63F</color>
+    <color name="textWhiteLight">#F5F5F5</color>
+
+    <color name="text03">#030303</color>
+    <color name="text333">#333333</color>
+    <color name="text666">#666666</color>
+    <color name="text999">#999999</color>
+    <color name="textHint">#BFBFBF</color>
+
+    <color name="textNormal">#9B9B9B</color>
+
+
+    <color name="background_gray5">#FFFFFF</color>
+    <color name="line">#E9E9E9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="btn_blue">#0F73CB</color>
+    <!--蒙版-->
+
+    <!--app主色调，背景色-->
+    <!--背景色-->
+    <color name="colorBackground">#F5F5F5</color>
+    <!--app主题色，应用于导航，按钮-->
+    <!--主题色激活态，如按钮高亮-->
+    <!--红色标签/提示-->
+    <!--红色标签/提示高亮-->
+    <!--黄色色标签/提示-->
+    <!--黄色色标签/提示高亮-->
+    <color name="colorLabelYellowActive">#F9E13F</color>
+    <!--黄色蒙版-->
+    <!--红色-->
+    <color name="colorRed">#FF3333</color>
+    <!--文字白色-->
+    <!--文字G1-->
+    <!--文字G2-->
+    <!--文字G3-->
+    <!--文字G4-->
+    <!--文字black-->
+    <!--gray1-->
+    <!--light gray-->
+    <!--gray2-->
+    <!--gray3-->
+    <!--gray4-->
+    <!--gray5-->
+    <!--gray6-->
+    <!--gray7-->
+    <!--gray8-->
+    <!--green-->
+
+    <!--蒙版-->
+
+    <!-- 40%不透明度 -->
+
+
+    <!--?xml version="1.0" encoding="UTF-8"?-->
+
+    <!--动态滤镜的颜色-->
+
+    <!-- 裁剪范围颜色 -->
+    <color name="transparent">#00000000</color>
+    <color name="split_line_bg">#ffcccccc</color>
+    <color name="textSelectColor">#333333</color>
+    <color name="textNormalColor">#B2B2B2</color>
+    <color name="yellow_bar">#ffefb63f</color>
+
+
+    <!--动态滤镜的颜色-->
+    <!--5-->
+    <!--6-->
+    <!--7-->
+    <!--8-->
+    <!--9-->
+    <!--10-->
+    <!--11-->
+
+    <color name="biz_audio_progress_first">#ffffff</color>
+    <color name="biz_audio_progress_second">#6b6666</color>
+
+    <color name="default_bg">#aa000000</color>
+    <color name="select_color">#00b2ff</color>
+    <!--special color-->
+    <color name="colorBtnSureGold">#C7A17D</color>
+    <color name="colorBgGrayF4">#F7F8FA</color>
+    <color name="colorBgGrayF9">#F9F9F9</color>
+    <color name="colorLine">#EBEBEB</color>
+    <color name="bgColorLightGray">#F0F2F5</color>
+    <color name="bgColorSettingGray">#F4F4F4</color>
+    <color name="colorBtnSureGray">#cccccc</color>
+    <color name="colorSwitchGreen">#51D664</color>
+    <color name="colorSwitchGray">#cdcdcd</color>
+    <color name="textColorGolden">#E7BF9A</color>
+    <color name="transparentWhite70">#ccffffff</color>
+    <color name="colorTextSeeMore">#FFC7A17D</color>
+    <color name="colorTextRed">#D1061F</color>
+    <color name="colorTextScoreRed">#D0021B</color>
+    <color name="colorTextCountDownGold">#E7BF9A</color>
+    <color name="colorTextCountDownWhite">#E2E2E2</color>
+    <color name="lightRed">#f57039</color>
+    <color name="join">#DCA73D</color>
+    <color name="text555">#555555</color>
+
+    <color name="cl_F4F4F4">#F4F4F4</color>
+    <color name="cl_252A32">#252A32</color>
+    <color name="cl_333333">#333333</color>
+    <color name="cl_cccccc">#cccccc</color>
+    <color name="cl_999999">#999999</color>
+    <color name="cl_4A90E2">#4A90E2</color>
+    <color name="cl_666666">#666666</color>
+    <color name="cl_dddddd">#dddddd</color>
+    <color name="cl_ffffff">#ffffff</color>
+    <color name="cl_C9C9C9">#C9C9C9</color>
+    <color name="cl_3D83DA">#3D83DA</color>
+    <color name="cl_EDEDED">#EDEDED</color>
+    <color name="cl_000000">#000000</color>
+    <color name="cl_D5A96D">#D5A96D</color>
+    <color name="cl_D2AA77">#D2AA77</color>
+    <color name="cl_979797">#979797</color>
+    <color name="cl_00000000">#00000000</color>
+    <color name="cl_F9E13F">#F9E13F</color>
+    <color name="cl_dcdcdc">#dcdcdc</color>
+    <color name="cl_F7F8FA">#F7F8FA</color>
+    <color name="cl_EAEAEA">#EAEAEA</color>
+    <color name="cl_74A9E6">#74A9E6</color>
+    <color name="cl_161A28">#161A28</color>
+    <color name="cl_252A3A">#252A3A</color>
+    <color name="cl_F5F5F5">#F5F5F5</color>
+    <color name="cl_e6e6e6">#E6E6E6</color>
+    <color name="cl_FF7224">#FF7224</color>
+    <color name="cl_BBBBBB">#BBBBBB</color>
+    <color name="cl_DCF6E9">#DCF6E9</color>
+    <color name="cl_FFE9EB">#FFE9EB</color>
+    <color name="cl_FFF7F2">#FFF7F2</color>
+    <color name="cl_F5F9FC">#F5F9FC</color>
+    <color name="cl_A8A2FF">#A8A2FF</color>
+    <color name="cl_FF6C77">#FF6C77</color>
+    <color name="cl_FFBD31">#FFBD31</color>
+    <color name="cl_988FEB">#988FEB</color>
+    <color name="cl_282828">#282828</color>
+    <color name="cl_9c9c9c">#9c9c9c</color>
+    <color name="cl_F3F3F3">#F3F3F3</color>
+    <color name="cl_ebebeb">#ebebeb</color>
+    <color name="cl_1FCD70">#1FCD70</color>
+
+
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="false">
+
+        <com.haibin.calendarview.CalendarLayout
+            android:id="@+id/calendarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:calendar_content_view_id="@+id/recyclerView"
+            app:default_status="expand">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_date_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_14dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="2018年7月"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/text_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_date_month">
+
+                    <ImageView
+                        android:id="@+id/iv_pre_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:paddingEnd="@dimen/padding_12dp"
+                        android:paddingStart="@dimen/padding_12dp"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_calendar_arrow_left" />
+
+                    <TextView
+                        android:id="@+id/tv_see_today"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_bg_see_today"
+                        android:paddingBottom="@dimen/padding_4dp"
+                        android:paddingEnd="@dimen/padding_14dp"
+                        android:paddingStart="@dimen/padding_14dp"
+                        android:paddingTop="@dimen/padding_4dp"
+                        android:text="@string/see_today"
+                        android:textColor="@color/text999"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_next_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:paddingEnd="@dimen/padding_12dp"
+                        android:paddingStart="@dimen/padding_12dp"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_calendar_arrow_right" />
+
+
+                </LinearLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <com.sunlands.intl.yingshi.ui.widget.calendar.MyCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_14dp"
+                app:calendar_height="@dimen/height_36dp"
+                app:calendar_padding="@dimen/padding_8dp"
+                app:current_day_text_color="#333333"
+                app:current_month_lunar_text_color="#CFCFCF"
+                app:current_month_text_color="#333333"
+                app:max_year="2050"
+                app:min_year="2000"
+                app:month_view="com.sunlands.intl.yingshi.ui.widget.calendar.SingleMonthView"
+                app:month_view_show_mode="mode_only_current"
+                app:other_month_lunar_text_color="#e1e1e1"
+                app:other_month_text_color="#e1e1e1"
+                app:scheme_text_color="@color/colorRed"
+                app:scheme_theme_color="@color/colorRed"
+                app:select_mode="single_mode"
+                app:selected_lunar_text_color="#CFCFCF"
+                app:selected_text_color="@color/white"
+                app:selected_theme_color="@color/text333"
+                app:week_background="#fff"
+                app:week_start_with="sun"
+                app:week_text_color="#111111"
+                app:week_view="com.sunlands.intl.yingshi.ui.widget.calendar.SingleWeekView"
+                app:week_view_scrollable="true"
+                app:year_view_day_text_color="@color/text333"
+                app:year_view_day_text_size="9sp"
+                app:year_view_month_text_color="@color/text333"
+                app:year_view_month_text_size="@dimen/text_18sp"
+                app:year_view_scheme_color="#f17706" />
+        </com.haibin.calendarview.CalendarLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_12dp"
+        android:layout_marginStart="@dimen/margin_12dp"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:text="今日课程"
+        android:textColor="@color/text333"
+        android:textSize="@dimen/text_20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_no_more_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_24dp"
+        android:text="@string/no_more_course"
+        android:textColor="@color/text999"
+        android:textSize="@dimen/text_15sp" />
+</LinearLayout>

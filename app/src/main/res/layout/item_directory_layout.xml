@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:id="@+id/v_directory"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="22dp"
+        app:bl_corners_radius="3.5dp"
+        app:bl_solid_color="#FF7224"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_q_d_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="第一章   素质教育观：素质教育观"
+        android:textColor="#ff282828"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/v_directory"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_directory" />
+
+    <TextView
+        android:id="@+id/tv_q_d_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="0/123题"
+        android:textColor="#ffa0a0a0"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_q_d_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_q_d_title" />
+
+    <TextView
+        android:id="@+id/tv_q_d_learned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="1234人已学"
+        android:textColor="#ffa0a0a0"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_q_d_count"
+        app:layout_constraintLeft_toRightOf="@id/tv_q_d_count"
+        app:layout_constraintTop_toTopOf="@id/tv_q_d_count" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="学习进度0%"
+        android:textColor="#ffa0a0a0"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_q_d_count"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_q_d_count" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="15dp"
+        android:background="#F3F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

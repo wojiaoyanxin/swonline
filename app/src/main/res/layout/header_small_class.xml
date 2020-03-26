@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_class_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_bg"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textColor="@color/text333"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_class_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/text999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_intro"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:text=""
+            android:textColor="@color/text999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_teacher"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="限时特价"
+            android:textColor="#E23F53"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_price"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                android:id="@+id/tv_show_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="原价"
+                android:textColor="@color/cl_999999"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/tv_show_price"
+                android:layout_alignRight="@+id/tv_show_price"
+                android:layout_centerVertical="true"
+                android:background="@color/cl_999999" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/cl_F4F4F4" />
+
+</LinearLayout>
+
+
+
+
+
+

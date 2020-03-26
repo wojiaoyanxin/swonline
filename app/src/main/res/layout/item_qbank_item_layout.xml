@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="94dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+   >
+    <android.support.v7.widget.CardView
+        android:elevation="5dp"
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_qbank_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="中学综合素质"
+                android:textColor="#ff282828"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="做题进度：0/1234"
+                android:textColor="#ffa0a0a0"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv_qbank_item_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_qbank_item_title" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_common_header" />
+
+        <include layout="@layout/layout_header_bottom_line" />
+
+
+        <LinearLayout
+
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@drawable/icon_downloading"
+                android:drawableRight="@drawable/xiayibu"
+                android:drawablePadding="15dp"
+                android:gravity="left|center"
+                android:paddingRight="16dp"
+                android:text="正在下载"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#CFCFCF" />
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_empty_download" />
+
+</FrameLayout>

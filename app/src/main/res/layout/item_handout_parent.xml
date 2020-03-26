@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/padding_24dp"
+    android:paddingEnd="@dimen/padding_14dp"
+    android:paddingTop="@dimen/padding_24dp">
+
+
+    <CheckBox
+        android:id="@+id/imgStatus_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:button="@drawable/selector_check_bg"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/tv_college_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgStatus_subject"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/padding_36dp"
+        android:text="经济法律学"
+        android:textColor="@color/text333"
+        android:textSize="@dimen/text_16sp" />
+
+    <TextView
+        android:id="@+id/tv_handout_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_college_name"
+        android:layout_below="@+id/tv_college_name"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:text="已下载讲义：0"
+        android:visibility="gone"
+        android:textColor="@color/text999"
+        android:textSize="@dimen/text_13sp" />
+
+    <ImageView
+        android:id="@+id/iv_collapse_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:src="@drawable/ic_arrow_expand" />
+
+
+</RelativeLayout>

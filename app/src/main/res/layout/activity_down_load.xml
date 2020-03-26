@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunlands.intl.yingshi.ui.my.handout.view.DownLoadActivity">
+
+    <include layout="@layout/layout_common_header" />
+
+    <include layout="@layout/layout_header_bottom_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <include layout="@layout/layout_header_bottom_line" />
+
+    <LinearLayout
+
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/icon_download_file"
+            android:drawablePadding="3dp"
+            android:text="下载文件"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/download_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/download_count_bg"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

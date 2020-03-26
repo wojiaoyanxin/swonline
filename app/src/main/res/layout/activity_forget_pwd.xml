@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_ffffff"
+    tools:context="com.sunlands.intl.yingshi.ui.login.view.ForgetPwdActivity"
+    tools:ignore="MissingPrefix">
+
+    <include
+        layout="@layout/comm_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_forget_password_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="126dp"
+        android:drawableRight="@drawable/iv_login_phone_select"
+        android:drawablePadding="4dp"
+        android:text="+86"
+        android:textColor="@color/cl_D5A96D"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.shangde.lepai.uilib.view.text.PowerfulEditText
+        android:id="@+id/et_forget_pwd_input_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="55dp"
+        android:background="@null"
+        android:hint="请输入手机号码"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:textColorHint="@color/cl_999999"
+        app:funcType="canClear"
+        app:layout_constraintBottom_toBottomOf="@id/tv_forget_password_area"
+        app:layout_constraintLeft_toRightOf="@id/tv_forget_password_area"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_forget_password_area"
+        />
+
+    <View
+        android:id="@+id/view_forget_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="55dp"
+        android:background="@color/cl_dddddd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_forget_password_area"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="8dp"
+        android:text="为了安全我们会向你手机发送验证码"
+        android:textColor="@color/cl_999999"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/view_forget_pwd"
+        />
+
+    <TextView
+        android:id="@+id/tv_forget_password_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="55dp"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="16sp"
+        app:bl_corners_radius="22dp"
+        app:bl_pressed_color="@color/cl_D2AA77"
+        app:bl_solid_color="@color/cl_cccccc"
+        app:bl_stroke_color="@color/cl_cccccc"
+        app:bl_unpressed_color="@color/cl_cccccc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_forget_password_area"
+        />
+</android.support.constraint.ConstraintLayout>

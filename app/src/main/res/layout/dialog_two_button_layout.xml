@@ -1,0 +1,106 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+                                             app:bl_corners_radius="6dp"
+                                             app:bl_solid_color="@color/cl_ffffff"
+                                             app:bl_stroke_color="@color/cl_ffffff"
+                                             tools:locale="it">
+
+    <View
+        android:id="@+id/v_def"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="13dp"
+        android:text="内容"
+        android:textColor="@color/cl_333333"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/v_def"
+        app:layout_constraintRight_toRightOf="@+id/v_def"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/cl_dcdcdc"
+        app:layout_constraintLeft_toLeftOf="@+id/v_def"
+        app:layout_constraintRight_toRightOf="@+id/v_def"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"/>
+
+    <View
+        android:id="@+id/v_replace"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/v_def"
+        app:layout_constraintRight_toRightOf="@+id/v_def"
+        app:layout_constraintTop_toBottomOf="@+id/v_line"/>
+
+    <View
+        android:id="@+id/v_line_two"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/cl_dcdcdc"
+        app:layout_constraintBottom_toBottomOf="@+id/v_replace"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_replace"/>
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/cl_999999"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/v_replace"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/v_line_two"
+        app:layout_constraintTop_toTopOf="@+id/v_replace"/>
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/v_replace"
+        app:layout_constraintLeft_toLeftOf="@+id/v_line_two"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_replace"/>
+</android.support.constraint.ConstraintLayout>

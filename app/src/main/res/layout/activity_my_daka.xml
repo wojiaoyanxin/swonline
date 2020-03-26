@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_20dp"
+            android:background="#23262C" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_44dp"
+            android:background="#23262C"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/vg_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingEnd="@dimen/padding_12dp"
+                android:paddingStart="@dimen/padding_12dp"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_back" />
+            </RelativeLayout>
+
+            <com.shangde.lepai.uilib.indicator.MagicIndicator
+                android:id="@+id/magic_indicator"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/poster_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:background="#99000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="464dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/combined_shape_copy"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/save"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="保存到相册"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/friend"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/friend"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="发给朋友"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/group"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/group"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="朋友圈"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/poster_close" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

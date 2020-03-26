@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.classroom.view.ClassroomFragment">
+
+    <include
+        layout="@layout/layout_status_bar_view"/>
+
+    <include layout="@layout/layout_common_header" />
+
+    <include layout="@layout/layout_header_bottom_line" />
+
+    <com.shangde.lepai.uilib.indicator.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:background="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBgGrayF4" />
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/home_plan">
+
+        <TextView
+            android:id="@+id/tv_small_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:maxLines="2"
+            android:text="【手机摄影】一一部级照片一部级照片一部级照片部级照片"
+            android:textColor="@color/cl_333333"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_small_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_small_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="2019.10.30（周日）19:00-20.00"
+            android:textColor="@color/cl_999999"
+            android:textSize="13sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_below="@+id/tv_small_start_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/iv_small_teacher_img"
+                android:layout_width="34dp"
+                android:layout_height="34dp" />
+
+            <TextView
+                android:id="@+id/tv_teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@+id/iv_small_teacher_img"
+                android:text="讲师:  "
+                android:textColor="@color/cl_999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_pay_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_common_home"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:paddingTop="4dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="4dp"
+                android:text="重播"
+                android:textColor="#252A39"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

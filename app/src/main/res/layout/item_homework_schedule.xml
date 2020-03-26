@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="97dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="@dimen/margin_14dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_item_exam_arrange"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/tv_exam_name"
+                android:elevation="0dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+                <TextView
+
+                    android:id="@+id/join_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/join"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="已参加"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_exam_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/text333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_exam_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="201年09月09日"
+                android:textColor="@color/text999"
+                android:textSize="12sp" />
+
+            <LinearLayout
+
+                android:id="@+id/ll_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/countdown_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingTop="3dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余答题时间 "
+                    android:textColor="#333333"
+                    android:textSize="11sp" />
+
+                <com.sunlands.intl.yingshi.ui.widget.countdown.CountdownView
+                    android:id="@+id/tv_count_down"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:text="09:09"
+                    android:textColor="#333333"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#dddddd"
+            android:visibility="gone" />
+
+        <LinearLayout
+
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="35dp"
+                android:src="@drawable/reexam" />
+
+            <TextView
+                android:id="@+id/join_exam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingBottom="2dp"
+                android:text="进入答题"
+                android:textColor="@color/text666"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_jiexi"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/look_jiexi" />
+
+                <TextView
+                    android:id="@+id/look_jiexi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="35dp"
+                    android:gravity="bottom"
+                    android:paddingBottom="2dp"
+                    android:text="查看解析"
+                    android:textColor="@color/textHint"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+    <!--<com.sunlands.intl.yingshi.ui.widget.countdown.CountdownView--><!--android:id="@+id/tv_count_down_day"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:gravity="center"--><!--android:text=""--><!--android:textColor="@color/textColorGolden"--><!--android:textSize="25sp"--><!--android:textStyle="bold" />-->

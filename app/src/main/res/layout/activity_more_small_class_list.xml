@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_ffffff"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_44dp"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/padding_5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/vg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_12dp"
+            android:paddingEnd="@dimen/padding_12dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_back_black" />
+
+        </RelativeLayout>
+
+        <com.shangde.lepai.uilib.indicator.MagicIndicator
+            android:id="@+id/magic_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <include layout="@layout/layout_header_bottom_line"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cl_ffffff" />
+
+</LinearLayout>

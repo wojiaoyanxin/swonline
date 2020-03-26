@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="#f8f8f8">
+
+    <TextView
+        android:id="@+id/tv_mail_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:text="发表回复"
+        android:textColor="@color/cl_999999"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="7dp"/>
+
+    <EditText
+        android:id="@+id/rt_mail_item"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="14dp"
+        android:padding="5dp"
+        android:background="@color/cl_ffffff"
+        android:gravity="left"
+        android:hint="回复:"
+        android:paddingLeft="11dp"
+        android:textSize="14sp"
+        android:textColorHint="@color/cl_dddddd"
+        app:layout_constraintTop_toBottomOf="@id/tv_mail_dialog"/>
+
+    <TextView
+        android:id="@+id/tv_mail_send"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textColor="@color/cl_dddddd"
+        android:text="发送"
+        app:bl_corners_radius="11dp"
+        app:bl_stroke_color="@color/cl_dddddd"
+        app:bl_stroke_width="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rt_mail_item"
+        tools:ignore="MissingPrefix"/>
+</android.support.constraint.ConstraintLayout>

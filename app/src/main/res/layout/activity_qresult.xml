@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunlands.intl.yingshi.ui.question.QResultActivity"
+    tools:ignore="MissingPrefix">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_question_result_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_q_result"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sunlands.comm_core.weight.commtitle.CommTitle
+            android:id="@+id/common_title"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            app:barStyle="transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rightIcon="@drawable/ic_share"
+            app:title="" />
+
+        <ImageView
+            android:id="@+id/iv_q_result_header"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_question_result_bg"
+            app:layout_constraintTop_toBottomOf="@id/common_title" />
+
+        <TextView
+            android:id="@+id/tv_q_result_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_q_result_header"
+            app:layout_constraintLeft_toRightOf="@id/iv_q_result_header"
+            app:layout_constraintTop_toTopOf="@id/iv_q_result_header" />
+
+
+        <TextView
+            android:id="@+id/tv_q_result_conclusion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再接再厉"
+            android:textColor="#ffffffff"
+            android:textSize="36sp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_q_result_header"
+            app:layout_constraintTop_toBottomOf="@id/iv_q_result_header" />
+
+        <TextView
+            android:id="@+id/tv_q_result_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="知识点还没掌握哦，加油！"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_q_result_conclusion"
+            app:layout_constraintTop_toBottomOf="@id/tv_q_result_conclusion" />
+
+        <TextView
+            android:id="@+id/tv_q_result_action"
+            android:layout_width="100dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/ic_q_result_again"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:text="重新练习"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            app:bl_corners_radius="29dp"
+            app:bl_stroke_color="@color/cl_ffffff"
+            app:bl_stroke_width="1dp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_q_result_header"
+            app:layout_constraintTop_toBottomOf="@id/tv_q_result_content" />
+
+        <TextView
+            android:id="@+id/tv_q_result_correct_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="48dp"
+            android:text="16%"
+            android:textColor="#ffe07428"
+            android:textSize="32sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/v_result_card_bg"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:background="@color/white"
+            app:bl_corners_topLeftRadius="50dp"
+            app:bl_corners_topRightRadius="50dp"
+            app:bl_solid_color="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/iv_question_result_bg" />
+
+        <View
+            android:id="@+id/v_result_center_line"
+            android:layout_width="1dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="34dp"
+            android:background="#EBEBEB"
+            app:layout_constraintLeft_toLeftOf="@id/v_result_card_bg"
+            app:layout_constraintRight_toRightOf="@id/v_result_card_bg"
+            app:layout_constraintTop_toTopOf="@id/v_result_card_bg" />
+
+        <TextView
+            android:id="@+id/tv_q_right_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff282828"
+            android:textSize="22sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/v_result_center_line"
+            app:layout_constraintTop_toTopOf="@id/v_result_center_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text=" 答对题数"
+            android:textColor="#ff9b9b9b"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_q_right_count"
+            app:layout_constraintRight_toRightOf="@id/tv_q_right_count"
+            app:layout_constraintTop_toBottomOf="@id/tv_q_right_count" />
+
+
+        <TextView
+            android:id="@+id/tv_q_error_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff282828"
+            android:textSize="22sp"
+            app:layout_constraintLeft_toLeftOf="@id/v_result_center_line"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/v_result_center_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="答错题数"
+            android:textColor="#ff9b9b9b"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_q_error_count"
+            app:layout_constraintRight_toRightOf="@id/tv_q_error_count"
+            app:layout_constraintTop_toBottomOf="@id/tv_q_error_count" />
+
+        <View
+            android:id="@+id/v_q_reslut_line"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F5F5F5"
+            app:layout_constraintTop_toBottomOf="@id/v_result_card_bg" />
+
+        <TextView
+            android:id="@+id/tv_q_result_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_q_directory"
+            android:text="答题卡"
+            android:textColor="#ff282828"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="16sp"
+            android:drawablePadding="2dp"
+            app:layout_constraintTop_toBottomOf="@id/v_q_reslut_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_q_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_q_result_card" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

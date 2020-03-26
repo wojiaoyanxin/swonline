@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_ffffff"
+    tools:context=".ui.community.view.CreateCommunityActivity">
+
+    <include
+        layout="@layout/comm_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/tv_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="14dp"
+                    android:gravity="center_vertical"
+                    android:text="主题："
+                    android:textColor="@color/cl_999999"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    />
+
+                <EditText
+                    android:id="@+id/et_create_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:background="@null"
+                    android:hint="请输入内容"
+                    android:maxLength="30"
+                    android:textColor="@color/cl_333333"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_theme"
+                    app:layout_constraintLeft_toRightOf="@id/tv_theme"
+                    app:layout_constraintTop_toTopOf="@id/tv_theme" />
+
+                <View
+                    android:id="@+id/view_create_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="26dp"
+                    android:background="@color/cl_cccccc"
+                    app:layout_constraintTop_toBottomOf="@id/et_create_title" />
+
+                <EditText
+                    android:id="@+id/et_create_mail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入正文"
+                    android:maxHeight="200dp"
+                    android:padding="14dp"
+                    android:textColor="@color/cl_333333"
+                    android:textColorHint="@color/cl_999999"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/view_create_mail" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="14dp"
+                    android:overScrollMode="never"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_create_mail_content" />
+
+                <TextView
+                    android:id="@+id/tv_send_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:text="选择发布到的位置"
+                    android:textColor="@color/cl_666666"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/recycler_pic" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/cl_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_send_location">
+
+                    <TextView
+                        android:id="@+id/tv_create_comm_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="14dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="14dp"
+                        android:paddingBottom="6dp"
+                        android:text="全部"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_create_comm_kyzq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:paddingLeft="14dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="14dp"
+                        android:paddingBottom="6dp"
+                        android:text="考研专区"
+                        app:layout_constraintLeft_toRightOf="@id/tv_create_comm_all" />
+
+                    <TextView
+                        android:id="@+id/tv_create_comm_gjss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:paddingLeft="14dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="14dp"
+                        android:paddingBottom="6dp"
+                        android:text="国际硕士"
+                        app:layout_constraintLeft_toRightOf="@id/tv_create_comm_kyzq" />
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:id="@+id/view_create_comm_look"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="14dp"
+                    app:layout_constraintTop_toBottomOf="@id/cl_group"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择可见的人"
+                    android:textColor="@color/cl_666666"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="@id/view_create_comm_look"
+                    app:layout_constraintTop_toTopOf="@id/view_create_comm_look" />
+
+                <TextView
+                    android:id="@+id/tv_create_comm_look_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/iv_create_comm_look_icon"
+                    android:drawablePadding="3dp"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="全员可见"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="12sp"
+                    app:layout_constraintRight_toRightOf="@id/view_create_comm_look"
+                    app:layout_constraintTop_toTopOf="@id/view_create_comm_look" />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

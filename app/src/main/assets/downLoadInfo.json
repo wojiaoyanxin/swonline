@@ -1,0 +1,38 @@
+[
+  {
+    "schoolId": 1,
+    "schoolName": "清华大学",
+    "produceId": 1001,
+    "productName": "测试包",
+    "courseId": 46382,
+    "courseName": "会计实务",
+    "fileName": "视频46382",
+    "fileId": 121,
+    "url": "http://46382",
+    "type": "视频"
+  },
+  {
+    "schoolId": 1,
+    "schoolName": "清华大学",
+    "produceId": 1001,
+    "productName": "测试包",
+    "courseId": 46382,
+    "courseName": "会计实务",
+    "fileId": 122,
+    "fileName": "音频46382.mp3",
+    "url": "https://1400301818.vod2.myqcloud.com/d60515e4vodtranscq1400301818/dda7084d5285890797438103153/v.f20.mp4",
+    "type": "音频"
+  },
+  {
+    "schoolId": 1,
+    "schoolName": "清华大学",
+    "produceId": 1001,
+    "productName": "测试包",
+    "courseId": 46382,
+    "courseName": "会计实务",
+    "fileId": 123,
+    "fileName": "唐诗300首.pdf",
+    "url": "https://yseducation-1254383113.file.myqcloud.com/1578471329823/2011%E5%B9%B4%E5%90%8C%E7%AD%89%E5%AD%A6%E5%8A%9B%E8%8B%B1%E8%AF%AD%E8%80%83%E8%AF%95%E7%9C%9F%E9%A2%98%E5%8F%8A%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90.pdf",
+    "type": "课件"
+  }
+]

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一课"
+        android:textColor="@color/cl_333333"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_class_name"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_suo" />
+
+    <LinearLayout
+        android:id="@+id/ll_teacher_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_class_name"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_teacher_head"
+            android:layout_width="22dp"
+            android:layout_height="22dp" />
+
+        <TextView
+            android:id="@+id/tv_teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="@color/cl_999999"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_teacher_info"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="#F3F3F3" />
+
+
+</RelativeLayout>

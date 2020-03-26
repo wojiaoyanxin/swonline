@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_12dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:background="@color/colorBgGrayF9"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/padding_14dp"
+            android:paddingStart="4dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_100dp"
+                android:paddingTop="15dp"
+                android:src="@drawable/bg_avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.5">
+
+                <ImageView
+
+                    android:id="@+id/iv_lesson_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/padding_14dp"
+                android:paddingStart="@dimen/padding_14dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.5">
+
+                <TextView
+                    android:id="@+id/tv_lesson_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/text03"
+                    android:textSize="@dimen/text_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_lesson_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text=""
+                    android:textColor="@color/text999"
+                    android:textSize="@dimen/text_14sp" />
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:background="#E9E9E9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+
+                android:id="@+id/ll_handout_download"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_14dp"
+                android:paddingTop="@dimen/padding_14dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/download_img_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_4dp"
+                        android:src="@drawable/ic_download_handout" />
+
+                    <TextView
+                        android:id="@+id/download_handout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/download_handout"
+                        android:textColor="@color/text333"
+                        android:textSize="@dimen/text_13sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_quiz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_14dp"
+                android:paddingTop="@dimen/padding_14dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_quiz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_4dp"
+                        android:src="@drawable/ic_quiz" />
+
+                    <TextView
+                        android:id="@+id/tv_quiz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/text333"
+                        android:textSize="@dimen/text_13sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/class_course_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ico_waitingbegin"
+        android:visibility="visible" />
+
+</RelativeLayout>
+
+

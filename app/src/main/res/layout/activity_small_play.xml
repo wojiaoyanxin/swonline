@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff252a39"
+    android:clickable="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <FrameLayout
+            android:id="@+id/pptContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cl_000000"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cl_000000">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_net"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_play_small_class"
+                android:text="网络未连接，请检查网络后重试"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/iv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#666666"
+                android:src="@drawable/ic_play_small_class"
+                android:text="点击重试"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="聊天室"
+            android:textColor="@color/cl_ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/videoContainer"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@color/cl_000000" />
+
+        <ImageView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_change"
+            android:textColor="@color/cl_ffffff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_send_msg"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/et_msg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="别憋着，但说无妨"
+                android:lines="1"
+                android:textColor="#ffffff"
+                android:textColorHint="#747474"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="14dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

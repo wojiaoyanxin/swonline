@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="101dp"
+    android:paddingTop="18dp"
+    android:paddingBottom="8dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_img"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rl_img"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="#242424"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_lable_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_hot_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv_lable_name"
+        android:drawableLeft="@drawable/ic_hot_left"
+        android:drawablePadding="6dp"
+        android:text=""
+        android:textColor="@color/text999"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

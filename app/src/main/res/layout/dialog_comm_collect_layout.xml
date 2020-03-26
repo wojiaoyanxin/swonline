@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <TextView
+        android:id="@+id/tv_comm_dialog_delete"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/v_comm_dialog_delete"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_dcdcdc"
+        app:layout_constraintLeft_toLeftOf="@id/tv_comm_dialog_delete"
+        app:layout_constraintRight_toRightOf="@id/tv_comm_dialog_delete"
+        app:layout_constraintTop_toBottomOf="@id/tv_comm_dialog_delete" />
+
+    <TextView
+        android:id="@+id/tv_comm_dialog_collect"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="收藏"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/v_comm_dialog_delete" />
+
+    <View
+        android:id="@+id/v_comm_dialog_collect"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_dcdcdc"
+        app:layout_constraintTop_toBottomOf="@id/tv_comm_dialog_collect" />
+
+    <TextView
+        android:id="@+id/tv_comm_dialog_inform"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="举报"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/v_comm_dialog_collect" />
+
+    <View
+        android:id="@+id/v_comm_dialog_inform"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_dcdcdc"
+        app:layout_constraintTop_toBottomOf="@id/tv_comm_dialog_inform" />
+
+    <TextView
+        android:id="@+id/tv_comm_dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/v_comm_dialog_inform" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_comm_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_comm_dialog_delete,v_comm_dialog_delete" />
+</android.support.constraint.ConstraintLayout>

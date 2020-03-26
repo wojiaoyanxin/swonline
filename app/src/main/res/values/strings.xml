@@ -1,0 +1,211 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">思维在线学院</string>
+    <string name="home">首页</string>
+    <string name="classroom">课堂</string>
+    <string name="mine">我的</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="setting">设置</string>
+    <string name="please_input_phone_number">请输入手机号</string>
+    <string name="please_input_6_to_12_password">请输入6–12位密码</string>
+    <string name="input_password_not_equals">两次密码不一致</string>
+    <string name="password_can_not_be_empty">密码不能为空</string>
+    <string name="ensure_password">确认密码</string>
+    <string name="filter_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="sure">确定</string>
+    <string name="new_password">新密码</string>
+    <string name="logout">退出登录</string>
+    <string name="good_comment_to_app">给软件好评</string>
+    <string name="about">关于我们</string>
+    <string name="change_password">修改密码</string>
+    <string name="play_video_on_no_wifi_tip">非Wi-Fi环境下播放视频和直播</string>
+    <string name="message_notice">消息提醒</string>
+    <string name="class_notice">上课提醒</string>
+    <string name="please_input_nickname">请输入昵称</string>
+    <string name="nickname">昵称</string>
+    <string name="save">保存</string>
+    <string name="exam_schedule">考试安排</string>
+    <string name="day">天</string>
+    <string name="view_paper_analyse">论文解析</string>
+    <string name="my_paper">我的论文</string>
+    <string name="download_handout">下载讲义</string>
+    <string name="un_join">未参加</string>
+    <string name="quizzes">进入答题</string>
+    <string name="quizzes_analyse">查看解析</string>
+    <string name="see_today">查看今天</string>
+    <string name="leave_message">发表互动后,请前往"直播讨论"中查看</string>
+    <string name="today_lesson">今日课程</string>
+    <string name="see_more">查看更多</string>
+    <string name="my_lesson_schedule">我的课表</string>
+    <string name="my_attendance">我的考勤</string>
+    <string name="score_query">成绩查询</string>
+    <string name="old_password">旧密码</string>
+    <string name="click_to_see">点击查看</string>
+    <string name="activity_paper_analysis">论文解析</string>
+    <string name="section">节</string>
+    <string name="un_finished_homework_count">未做作业数：</string>
+    <string name="total_homework_count">总作业数：</string>
+    <string name="un_finished_homework_ratio">未做作业率：</string>
+    <string name="no_attend_count">未上课节数：</string>
+    <string name="total_subject_count">总课程节数：</string>
+    <string name="no_attend_ratio">未上课率：</string>
+    <string name="apply_data">申请资料</string>
+    <string name="apply_degree">申请学位</string>
+    <string name="please_input_your_real_name">请输入您的真实姓名</string>
+    <string name="apply_now">立即申请</string>
+    <string name="city">所在城市</string>
+    <string name="highest_degree">最高学历</string>
+    <string name="work_engage">从事行业</string>
+    <string name="type_of_position">岗位类型</string>
+    <string name="choose_college">选择院校</string>
+    <string name="note">备注：</string>
+    <string name="exam_tip">请使用电脑前往思维教育网站上参加考试</string>
+    <string name="subject_with_colon">科目：</string>
+    <string name="pager_title">论文题目：</string>
+    <string name="answer_question">答题</string>
+    <string name="no_more_data">没有更多了</string>
+    <string name="current_version">当前版本</string>
+    <string name="is_the_latest_version">当前已是最新版本</string>
+    <string name="version_update">版本更新</string>
+    <string name="teacher_with_colon">老师：</string>
+    <string name="last_watch_with_colon">观看至：</string>
+    <string name="watch_record_video">观看录播</string>
+    <string name="watch_live_video">观看直播</string>
+    <string name="to_learn">前往学习</string>
+    <string name="attendance_course">已学习</string>
+    <string name="absence_course">未学习</string>
+    <string name="is_finish">已完成</string>
+    <string name="not_finish">未完成</string>
+    <string name="wait_start">待开始</string>
+    <string name="submit_data">提交资料</string>
+    <string name="data_verification">资料审核</string>
+    <string name="send_offer">发送录取offer</string>
+    <string name="pay_tuition_fees">缴纳学费</string>
+    <string name="course_start">开课</string>
+    <string name="language_exam">语言考试</string>
+    <string name="issuing_offer">发放正式offer</string>
+    <string name="international_undergraduate">国际本科</string>
+    <string name="international_master">国际硕士</string>
+    <string name="international_doctor">国际博士</string>
+    <string name="today">今日</string>
+    <string name="in_a_week">一周内</string>
+    <string name="earlier">更早</string>
+    <string name="no_history">暂无记录</string>
+    <string name="no_message">暂无消息</string>
+    <string name="history_record">本地观看</string>
+    <string name="college_news">公告</string>
+    <string name="change_pwd_success">密码修改成功</string>
+    <string name="do_homework">写作业</string>
+    <string name="file_downloading">文件下载中…</string>
+    <string name="no_more_course">最近没有课程了</string>
+    <string name="no_more_apply">暂无申请</string>
+    <string name="no_more_content">暂无内容</string>
+    <string name="no_quiz">暂无作业</string>
+    <string name="no_handout">暂无讲义</string>
+    <string name="apply_expire_text">由于您未在所申请批次时间内完成申请， 现已将您的申请批次更改至当前批次</string>
+    <string name="to_apply">前往申请</string>
+    <string name="not_apply">暂不申请</string>
+    <string name="star1">很抱歉给您带来不好的体验，指出我们的不足，让学习更简单</string>
+    <string name="star2">很抱歉给您带来不好的体验，指出我们的不足，让学习更简单</string>
+    <string name="star3">我们还有不足，请详细写出您的建议，我们会变得更好</string>
+    <string name="star4">鼓励下我们的老师，他们会更优秀</string>
+    <string name="star5">我们会为您带来最优质的教学</string>
+    <string name="punchrules">打卡规则</string>
+    <string name="taskjiangli">任务奖励</string>
+    <string name="no_reward">暂无奖励</string>
+    <string name="no_content">暂无内容</string>
+    <!--NSArray *ts = @[@"个人信息", @"教育信息", @"工作经历", @"文件上传", @"字数短文"];
+    NSArray *sts = @[@"未填写", @"未填写", @"未填写", @"未上传", @"未填写"];
+    NSArray *selectSts = @[@"已填写", @"已填写", @"已填写", @"已上传", @"已填写"];-->
+    <string-array name="apply_step_detail">
+        <item>个人信息</item>
+        <item>教育信息</item>
+        <item>工作经历</item>
+        <item>文件上传</item>
+        <item>自述短文</item>
+    </string-array>
+    <string-array name="apply_step_detail_finished">
+        <item>已填写</item>
+        <item>已填写</item>
+        <item>已填写</item>
+        <item>已上传</item>
+        <item>已填写</item>
+    </string-array>
+    <string-array name="apply_step_detail_unfinished">
+        <item>未填写</item>
+        <item>未填写</item>
+        <item>未填写</item>
+        <item>未上传</item>
+        <item>未填写</item>
+    </string-array>
+
+    <string-array name="apply_step_finished">
+        <item>已提交资料</item>
+        <item>已通过审核</item>
+        <item>已发送</item>
+        <item>已缴纳</item>
+        <item>已开课</item>
+        <item>已参加</item>
+        <item>已发送</item>
+    </string-array>
+    <string-array name="apply_step_unfinished">
+        <item>未提交资料</item>
+        <item>审核不通过</item>
+        <item>未发送</item>
+        <item>未缴纳</item>
+        <item>未开课</item>
+        <item>未参加</item>
+        <item>未发送</item>
+    </string-array>
+    <string-array name="classroom_items">
+        <item>课程日历</item>
+        <item>课程列表</item>
+        <!--<item>重播课</item>-->
+        <!--<item>讨论课</item>-->
+    </string-array>
+
+    <string-array name="plan_items">
+        <item>课程</item>
+        <item>作业</item>
+        <item>考试</item>
+        <item>论文</item>
+    </string-array>
+    <string-array name="fill_items">
+        <item>未出勤课程</item>
+        <item>未参加考试</item>
+        <item>未完成作业</item>
+        <item>未提交论文</item>
+    </string-array>
+
+    <string-array name="download_items">
+        <item>全部</item>
+        <item>视频</item>
+        <item>音频</item>
+        <item>课件</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="exam_items">
+        <item>随堂作业</item>
+        <item>考试</item>
+    </string-array>
+
+    <string-array name="attendance_items">
+        <item>课堂考勤</item>
+        <item>作业考勤</item>
+    </string-array>
+
+    <string-array name="daka_items">
+        <item>打卡领奖</item>
+        <item>我的奖励</item>
+    </string-array>
+    <string-array name="live_detail_items">
+
+        <item>直播讨论</item>
+        <item>教学辅助</item>
+        <item>课程选集</item>
+    </string-array>
+    <string name="round_star">
+        M333.312 257.856c-8.832 16.512-22.208 27.264-36.224 28.736l-208.64 30.272C8.064 330.24-23.68 430.528 33.664 490.176l150.016 150.912a52.48 52.48 0 0 1 14.848 44.928l-36.352 214.08c-12.864 83.648 70.784 147.072 141.632 106.88l185.472-100.288a42.752 42.752 0 0 1 44.8-0.256l186.56 100.8c70.464 39.936 154.048-23.488 141.312-106.752l-36.416-213.952a60.16 60.16 0 0 1 15.104-45.696l149.376-150.464c57.728-59.968 25.984-160.192-53.888-173.504l-208.256-30.144c-16.512-3.456-30.912-14.208-36.8-27.968L598.912 61.888A94.464 94.464 0 0 0 425.024 62.08L333.312 257.856m0 0
+    </string>
+
+</resources>

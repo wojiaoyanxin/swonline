@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_qshare"
+        android:layout_width="225dp"
+        android:layout_height="400dp" />
+
+    <TextView
+        android:id="@+id/iv_qshare_wx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/ic_qshare_wx"
+        android:gravity="center"
+        android:text="微信"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_qshare"
+        app:layout_constraintTop_toBottomOf="@id/iv_qshare" />
+
+    <TextView
+        android:id="@+id/iv_qshare_pyq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="34dp"
+        android:drawableTop="@drawable/ic_qshare_pyq"
+        android:gravity="center"
+        android:text="微信"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="@id/iv_qshare"
+        app:layout_constraintTop_toTopOf="@id/iv_qshare_wx" />
+
+    <ImageView
+        android:id="@+id/iv_qshare_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_q_dialog_close"
+        app:layout_constraintLeft_toLeftOf="@id/iv_qshare"
+        app:layout_constraintRight_toRightOf="@id/iv_qshare"
+        app:layout_constraintTop_toBottomOf="@id/iv_qshare_wx" />
+</android.support.constraint.ConstraintLayout>

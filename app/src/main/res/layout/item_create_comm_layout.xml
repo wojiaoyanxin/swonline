@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="13dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp">
+        <ImageView
+            android:id="@+id/iv_create_comm_pic"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:src="@color/cl_ffffff"/>
+        <ImageView
+            android:id="@+id/iv_create_comm_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_create_comm_delete"
+            android:layout_gravity="right|top"
+            />
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

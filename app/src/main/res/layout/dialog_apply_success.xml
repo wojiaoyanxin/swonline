@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/size_20"
+            android:layout_height="@dimen/size_20"
+            android:layout_gravity="end"
+            android:layout_marginBottom="@dimen/margin_32dp"
+            android:clickable="true"
+
+            android:focusable="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_weixin_notice_close"/>
+
+        <FrameLayout
+            android:layout_width="315dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_apply_success_dialog"
+            android:clickable="true"
+            android:clipChildren="false"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img_apply_success_dialog"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:paddingStart="@dimen/margin_18dp"
+                android:paddingEnd="@dimen/margin_18dp"
+                android:text="更多MBA院校咨询请前往思维教育官网查看"
+                android:textColor="#ff999999"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="56dp"
+                android:text="申请成功"
+                android:textColor="#ff030303"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

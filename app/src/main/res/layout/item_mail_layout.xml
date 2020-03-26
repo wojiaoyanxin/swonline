@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    android:background="@color/white"
+    android:paddingBottom="14dp"
+    tools:ignore="MissingPrefix">
+
+    <com.shangde.lepai.uilib.view.RoundImageView
+        android:id="@+id/iv_mail_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/ic_avatar_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:text="187%87**"
+        android:textColor="@color/cl_333333"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_mail_head"
+        app:layout_constraintLeft_toRightOf="@id/iv_mail_head"
+        app:layout_constraintTop_toTopOf="@id/iv_mail_head" />
+
+    <ImageView
+        android:id="@+id/iv_mail_zhiding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_post_zhiding"
+        android:visibility="gone"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_mail_head"
+        app:layout_constraintLeft_toRightOf="@id/tv_mail_name"
+        app:layout_constraintTop_toTopOf="@id/iv_mail_head" />
+
+
+    <TextView
+        android:id="@+id/tv_vocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="行业"
+        android:textColor="@color/cl_74A9E6"
+        android:textSize="9sp"
+        android:visibility="gone"
+        app:bl_corners_radius="3dp"
+        app:bl_stroke_color="@color/cl_74A9E6"
+        app:bl_stroke_width="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_mail_head"
+        app:layout_constraintLeft_toRightOf="@id/iv_mail_head" />
+
+    <ImageView
+        android:id="@+id/iv_mail_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:src="@drawable/iv_mail_more_icon"
+        app:layout_constraintBottom_toBottomOf="@id/iv_mail_head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/iv_mail_head"
+        app:layout_constraintTop_toTopOf="@id/iv_mail_head" />
+
+    <TextView
+        android:id="@+id/tv_mail_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="您发起的美国汉文大美您的入"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_mail_head" />
+
+    <TextView
+        android:id="@+id/tv_mail_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="您发起的美国汉文大学—MBA专业的入学您发起的美 文大学—MBA专业的入学，您发起的美国汉文大学— 专业的入学您发起的美国汉文大学—MBA专业的入"
+        android:textColor="@color/cl_333333"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mail_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_img_list"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mail_content"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_mail_read_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="999浏览"
+        android:textColor="@color/cl_999999"
+        android:textSize="11sp"
+        app:bl_corners_radius="3dp"
+        app:bl_solid_color="@color/cl_EAEAEA"
+        app:bl_stroke_color="@color/cl_EAEAEA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_img_list" />
+
+    <TextView
+        android:id="@+id/tv_mail_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="21dp"
+        android:gravity="right"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="2018"
+        android:textColor="@color/cl_999999"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_img_list" />
+
+    <TextView
+        android:id="@+id/tv_mail_share"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:drawableLeft="@drawable/iv_mail_share"
+        android:gravity="center"
+        android:text="分享"
+        android:textColor="@color/cl_999999"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/iv_mail_head"
+        app:layout_constraintTop_toBottomOf="@id/rv_img_list" />
+
+    <TextView
+        android:id="@+id/tv_mail_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="54dp"
+        android:drawableLeft="@drawable/iv_mail_message"
+        android:gravity="center"
+        android:text="回复"
+        android:textColor="@color/cl_999999"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_mail_head"
+        app:layout_constraintTop_toBottomOf="@id/rv_img_list" />
+
+    <TextView
+        android:id="@+id/tv_mail_like"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:text="点赞"
+        android:textColor="@color/cl_999999"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_mail_message"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_mail_message" />
+
+    <ImageView
+        android:id="@+id/iv_mail_islike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iv_mail_like"
+        app:layout_constraintBottom_toBottomOf="@id/tv_mail_message"
+        app:layout_constraintRight_toLeftOf="@id/tv_mail_like"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_mail_share" />
+    <!--<View-->
+    <!--android:id="@+id/view_line"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_marginTop="21dp"-->
+    <!--android:background="@color/cl_dddddd"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/tv_mail_read_num"/>-->
+
+    <!--<View-->
+    <!--android:id="@+id/view_line2"-->
+    <!--android:layout_width="0.5dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@color/cl_dddddd"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/view_line"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_mail_all_reply"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="全部回复"-->
+    <!--android:textColor="@color/cl_666666"-->
+    <!--android:textSize="12sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="@id/view_line2"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="@id/view_line2"-->
+    <!--app:layout_constraintTop_toTopOf="@id/view_line2"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_mail_me_reply"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="13dp"-->
+    <!--android:text="我要回复"-->
+    <!--android:textColor="@color/cl_666666"-->
+    <!--android:textSize="12sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="@id/view_line2"-->
+    <!--app:layout_constraintLeft_toLeftOf="@id/view_line2"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="@id/view_line2"/>-->
+</android.support.constraint.ConstraintLayout>

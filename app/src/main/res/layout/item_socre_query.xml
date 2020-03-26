@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/cl_ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding_20dp"
+        android:paddingEnd="@dimen/padding_20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="考试课程"
+            android:textColor="@color/cl_666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin_12dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="考试类型"
+            android:textColor="@color/cl_666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="考试成绩"
+            android:textColor="@color/cl_666666"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E9E9E9" />
+
+        <LinearLayout
+            android:id="@+id/ll_item_score_query"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_subject_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textColor="@color/text333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/margin_12dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="讨论话题"
+                android:textColor="@color/text333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_credits"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:gravity="center|right"
+                android:text="0"
+                android:textColor="@color/text333"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:paddingTop="30dp"
+        android:text="一周计划"
+        android:textColor="@color/text333"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/home_plan">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_alignBottom="@+id/week"
+            android:layout_marginLeft="11dp"
+            android:layout_toLeftOf="@+id/view"
+            android:background="#F9E13F" />
+
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:text="第*周"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@+id/week"
+            android:background="#979797" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@+id/view"
+            android:text=""
+            android:textSize="12sp" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/week"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:id="@+id/ll_class"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/count1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1.5dp"
+                    android:text=""
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/text_22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1.5dp"
+                    android:text="课程"
+                    android:textColor="@color/text666"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/ll_homework"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/count2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1.5dp"
+                    android:text=""
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/text_22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1.5dp"
+                    android:text="作业"
+                    android:textColor="@color/text666"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_exam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/count3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1.5dp"
+                    android:text=""
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/text_22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1.5dp"
+                    android:text="考试"
+                    android:textColor="@color/text666"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/ll_thesis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/count4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1.5dp"
+                    android:text=""
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/text_22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1.5dp"
+                    android:text="论文"
+                    android:textColor="@color/text666"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recycleView_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray5" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_homework"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray5" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_exam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray5" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_paper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray5" />
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_plan"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="查看更多"
+                android:textColor="@color/text333"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_none"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/wu"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

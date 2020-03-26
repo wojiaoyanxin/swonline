@@ -1,0 +1,202 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <style name="touming" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--透明背景弹出层样式 -->
+    <style name="DialogStyle" parent="AppTheme">
+        <!-- 设置无标题 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 设置完全透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置屏幕变暗 -->
+         <item name="android:windowAnimationStyle">@style/notAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="notAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+    <style name="SunLandsApp" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:resizeableActivity">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+    <style name="PhoneNumberEdit">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">16</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="PasswordEdit">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:digits">@string/filter_password</item>
+    </style>
+    <style name="AppSplash" parent="android:Theme">
+        <!--<item name="android:windowBackground">@drawable/v3_0_ic_splash</item>-->
+        <item name="android:windowBackground">@drawable/shape_splash</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+    </style>
+
+    <!--====================================================================-->
+    <!--rtmp room -->
+
+    <!--/rtmp room-->
+
+    <style name="AppProgressBarStyle">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/layer_list_progress_bar</item>
+        <!--<item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>-->
+    </style>
+
+    <!--<style type="attr" name="NumberProgressBarStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#fff</item>
+        <item name="progress_reached_color">@color/colorAccent</item>
+
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">@color/colorAccent</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>-->
+
+    <!-- 自定义loading dialog -->
+
+    <!-- Input dialog theme. -->
+
+    <!-- 问题 -->
+
+    <!-- 答案选项 -->
+
+    <!-- Media Controller -->
+
+    <style name="BottomToTopAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_enter_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_exit_from_bottom</item>
+    </style>
+
+    <style name="dialog_default" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/BottomToTopAnim</item>
+    </style>
+    <style name="dialog_dim" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/BottomToTopAnim</item>
+    </style>
+
+    <!--====================================================================-->
+
+    <style name="BottomSheetEdit" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否显示title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置dialog的背景 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5 -->
+        <item name="android:backgroundDimAmount">0.2</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BottomDialog2" parent="AppTheme">
+
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 设置dialog的背景 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">500dp</item>
+    </style>
+
+
+    <style name="Anim_fade" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+
+
+<style name="fade" parent="@android:style/Animation.Activity">
+    <item name="android:activityOpenEnterAnimation">@anim/anim_enter_from_bottom</item>
+    <item name="android:activityOpenExitAnimation">@anim/anim_exit_from_bottom</item>
+    <item name="android:activityCloseEnterAnimation">@anim/anim_enter_from_bottom</item>
+    <item name="android:activityCloseExitAnimation">@anim/anim_exit_from_bottom</item>
+</style>
+
+
+
+</resources>

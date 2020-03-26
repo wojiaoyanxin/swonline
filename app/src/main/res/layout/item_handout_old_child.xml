@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/padding_20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:background="@color/colorBgGrayF9"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingEnd="@dimen/padding_14dp"
+        android:paddingStart="@dimen/padding_14dp"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/imgStatus_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@null"
+                android:button="@drawable/selector_check_bg"
+                android:focusable="false"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_handout_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgStatus_item"
+                android:ellipsize="end"
+                android:layout_marginRight="80dp"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/text333"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/watch_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_handout_name"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@+id/imgStatus_item"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="观看至0%"
+                android:textColor="@color/text555"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_handout_download_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_handout_name"
+                android:layout_below="@+id/watch_progress"
+                android:layout_marginTop="3dp"
+                android:text="2019-09-09"
+                android:textColor="@color/text999"
+                android:textSize="@dimen/text_12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_click_to_see"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_common_home"
+        android:gravity="center"
+        android:text="@string/click_to_see"
+        android:textColor="@color/text333"
+        android:textSize="@dimen/text_12sp" />
+
+</RelativeLayout>

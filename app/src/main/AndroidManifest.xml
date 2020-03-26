@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sunlands.intl.yingshi">
+
+    <permission
+        android:name="com.yingshi.edu.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 点播播放器悬浮窗权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 这里com.sunlands.mba.intl改成app的包名 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.yingshi.edu.permission.MIPUSH_RECEIVE" /> <!-- 这里com.sunlands.mba.intl改成app的包名 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name"
+        tools:targetApi="n">
+        <activity android:name=".ui.my.handout.view.OldHandoutActivity"></activity>
+        <activity android:name=".ui.my.handout.view.OldDownLoadingActivity" />
+        <activity android:name=".ui.my.handout.view.DownLoadingActivity" />
+        <activity android:name=".ui.question.QBankAllContentActivity" />
+        <activity android:name=".ui.question.QBankActivity" />
+        <activity android:name=".ui.question.QWrongCollectActivity" />
+        <activity android:name=".ui.question.QDirectoryContentActivity" />
+        <activity android:name=".ui.question.QDirectoryActivity" />
+        <activity android:name=".ui.question.QResultActivity" />
+        <activity android:name=".ui.question.QuestionActivity" />
+        <activity android:name=".ui.activity.home.smallclass.MoreSmallClassListActivity" />
+        <activity android:name=".ui.activity.home.smallclass.SmallClasListActivity" />
+        <activity
+            android:name=".ui.activity.home.smallclass.SmallPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.home.view.AskAnswerDetailsActivity" />
+        <activity android:name=".ui.home.view.AskAnswerActivity" />
+        <activity android:name=".ui.home.view.QuestionListActivity" />
+        <activity android:name=".ui.home.view.TodayHotListActivity" />
+        <activity android:name=".ui.my.view.OrderDetailsActivity" />
+        <activity android:name=".ui.activity.home.smallclass.SmallClassDetailsActivity" /> <!-- 高德地图 -->
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.my.view.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.view.NewLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.my.view.UserInfoSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.home.examarrangement.ExamArrangementActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.home.mythesisn.MyPapersActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.HistoryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.ChangePasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.AboutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.home.scorequery.ScoreQueryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.home.mythesisn.PaperAnalysisActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.MyApplyDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.home.apply.ApplyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.view.ArticleDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.MyApplyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.view.ArticlesActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.home.smallclass.PayWebViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.DoHomeworkOrQuizActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.handout.view.HandoutDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.community.view.FriendListActivity" />
+        <activity
+            android:name=".ui.home.view.SysMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".web.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.community.view.MyFriendActivityActivity"
+            android:screenOrientation="portrait" /> <!-- 小米推送service -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.yingshi.edu"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" /> <!-- 注：此service必须在3.0.1版本以后（包括3.0.1版本）加入 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" /> <!-- 注：此service必须在2.2.5版本以后（包括2.2.5版本）加入 -->
+        <activity
+            android:name=".ui.community.view.CommunityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.community.view.CreateCommunityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.community.view.CommunityContentActivity"
+            android:screenOrientation="portrait" /> <!-- qq登录 -->
+        <activity
+            android:name=".ui.activity.home.plan.view.PlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.view.PwdLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.view.PhoneLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.view.VerifiCationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.view.ForgetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.view.ForgePwdResetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.view.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.home.schoollist.view.SchoolListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.view.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.home.studystat.view.StudyStatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.home.leakfilling.view.FillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.community.view.MasterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.community.view.FindCommunityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.community.view.MyCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.handout.view.MyHandoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.MyPrivateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.CompanyNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.PositionNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.community.view.ReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.DialogActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/DialogStyle">
+            <intent-filter>
+                <action android:name="ui.activity.DialogActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.home.biling.BilingDaKaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sunlands.comm_core.web.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FaceRecognitionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.handout.view.MaterialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.handout.view.DownLoadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.handout.view.DownLoadListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.view.MyMaterialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ExamTransitionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.liteav.demo.play.uiview.CoursePlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.player.SystemAudioPlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d466d9f4db4e859396430355d77d51f8" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" />
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+        <!--
+        me_moudle
+
+        <activity
+            android:name="sunlands.com.me.view.MyOrderActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="sunlands.com.me.view.PositionNameActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="sunlands.com.me.view.AboutActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="sunlands.com.me.view.ChangePasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="sunlands.com.me.view.UserInfoSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="sunlands.com.me.view.UserInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="sunlands.com.me.view.HistoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="sunlands.com.me.view.MyApplyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="sunlands.com.me.view.MyPrivateActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="sunlands.com.me.view.CompanyNameActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+        android:name="sunlands.com.me.view.SettingsActivity"
+        android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="sunlands.com.home.taskreminder.view.FillActivity"
+            android:screenOrientation="portrait"/>
+        -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APPKEY}" />
+
+        <provider
+            android:name=".provider.MyFileProvider"
+            android:authorities="com.yingshi.edu.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.sunlands.intl.yingshi.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+        <provider
+            android:name="com.blankj.utilcode.util.Utils$FileProvider4UtilCode"
+            android:authorities="${applicationId}.utilcode.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:multiprocess="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/util_code_provider_paths" />
+        </provider>
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.MiPushReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.amap.api.location.APSService" />
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":pushservice" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+        <service android:name=".service.DownloadService" />
+        <service android:name=".ui.my.player.MusicPlayerService" />
+    </application>
+
+</manifest>

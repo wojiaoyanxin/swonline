@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="14dp"
+    android:id="@+id/child_root"
+    android:paddingRight="14dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/time"
+        android:drawableLeft="@drawable/play_img"
+        android:drawablePadding="5dp"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="@color/text333"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/title"
+        android:background="#DADADA" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="3分钟"
+        android:textColor="@color/text999"
+        android:textSize="@dimen/text_13sp" />
+
+
+</RelativeLayout>

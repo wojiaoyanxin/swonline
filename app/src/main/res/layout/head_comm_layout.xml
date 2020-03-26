@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="-14dp"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_ffffff">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="同学好友"
+                android:textColor="@color/cl_333333"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_head_list"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="7dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/v_comm_hotlist_more_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/v_comm_hotlist_more_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11dp"
+                android:src="@drawable/iv_comm_friend_icon"
+                app:layout_constraintBottom_toBottomOf="@id/rv_head_list"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/rv_head_list"
+                />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_comm_kyzq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="15dp"
+            android:drawableTop="@drawable/iv_comm_ky_icon"
+            android:drawablePadding="8dp"
+            android:text="考研专区"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_comm_gjss"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_friend"
+            />
+
+        <TextView
+            android:id="@+id/tv_comm_gjss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/iv_comm_gjss_icon"
+            android:drawablePadding="8dp"
+            android:text="国际硕士"
+            app:layout_constraintBottom_toBottomOf="@id/tv_comm_kyzq"
+            app:layout_constraintEnd_toStartOf="@+id/tv_comm_wdtz"
+            app:layout_constraintStart_toEndOf="@id/tv_comm_kyzq"
+            app:layout_constraintTop_toTopOf="@id/tv_comm_kyzq"
+            />
+
+        <TextView
+            android:id="@+id/tv_comm_wdtz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/iv_comm_wdtz_icon"
+            android:drawablePadding="8dp"
+            android:text="我的贴子"
+            app:layout_constraintBottom_toBottomOf="@id/tv_comm_kyzq"
+            app:layout_constraintStart_toEndOf="@id/tv_comm_gjss"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_comm_kyzq"
+            />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_comm_hdzq"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawableTop="@drawable/iv_comm_hdzq_icon"-->
+        <!--android:drawablePadding="8dp"-->
+        <!--android:text="活动专区"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/tv_comm_kyzq"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toEndOf="@id/tv_comm_wdtz"-->
+        <!--app:layout_constraintTop_toTopOf="@id/tv_comm_kyzq"-->
+        <!--/>-->
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/cl_ffffff"
+        app:layout_constraintTop_toBottomOf="@id/cl_top_layout">
+
+        <View
+            android:id="@+id/v_comm_recommend"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/cl_F9E13F"
+            app:layout_constraintBottom_toBottomOf="@id/tv_comm_recommend"
+            app:layout_constraintLeft_toLeftOf="@id/tv_comm_recommend"
+            app:layout_constraintRight_toRightOf="@id/tv_comm_recommend"
+            />
+
+        <TextView
+            android:id="@+id/tv_comm_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:text="推荐"
+            android:textColor="@color/cl_333333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <View
+            android:id="@+id/view_comm_head_2"
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/cl_333333"
+            app:layout_constraintBottom_toBottomOf="@id/tv_comm_recommend"
+            app:layout_constraintLeft_toRightOf="@id/tv_comm_recommend"
+            app:layout_constraintTop_toTopOf="@id/tv_comm_recommend"
+            />
+
+        <View
+            android:id="@+id/v_comm_hotlist"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/cl_F9E13F"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tv_comm_hotlist"
+            app:layout_constraintLeft_toLeftOf="@id/tv_comm_hotlist"
+            app:layout_constraintRight_toRightOf="@id/tv_comm_hotlist"
+            />
+
+        <TextView
+            android:id="@+id/tv_comm_hotlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_10dp"
+            android:text="热榜"
+            android:textColor="@color/cl_999999"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tv_comm_recommend"
+            app:layout_constraintLeft_toRightOf="@id/view_comm_head_2"
+            app:layout_constraintTop_toTopOf="@id/tv_comm_recommend"
+            />
+
+        <ImageView
+            android:id="@+id/iv_hot_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/iv_comm_hot_icon"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tv_comm_hotlist"
+            app:layout_constraintLeft_toLeftOf="@id/tv_comm_hotlist"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:background="@color/cl_000000"
+        android:alpha="0.1"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/cl"
+        android:layout_height="1dp"/>
+</android.support.constraint.ConstraintLayout>

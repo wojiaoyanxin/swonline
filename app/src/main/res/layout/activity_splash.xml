@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <com.shangde.lepai.uilib.view.CustomVideoView
+        android:id="@+id/mVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/ic_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="213dp"
+        android:text="思 维 在 线"
+        android:textColor="#ffffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="242dp"
+        android:text="OVERSEAS ELITE SCHOOLS "
+        android:textColor="#ffffffff"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_weixin_login"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="微信登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_phone_login"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/rigster_btn_bg"
+        android:gravity="center"
+        android:text="手机号登录"
+        android:textColor="#D7AB70"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/tv_rigster"
+        android:layout_width="136dp"
+        android:layout_height="46dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/rigster_btn_bg"
+        android:gravity="center"
+        android:text="立即注册"
+        android:textColor="#D7AB70"
+        android:textSize="@dimen/sp_16"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="65dp"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="我已阅读并同意"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_protocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="“用户协议”"
+            android:textColor="#0dc5a2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="和"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="“隐私政策”"
+            android:textColor="#0dc5a2"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

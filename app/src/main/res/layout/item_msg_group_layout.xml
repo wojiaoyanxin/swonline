@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <com.sunlands.comm_core.weight.expansionpanel.ExpansionHeaderConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:expansion_headerIndicator="@id/iv_group_icon"
+        app:expansion_layout="@id/expansionLayout"
+        app:expansion_toggleOnClick="true">
+
+        <ImageView
+            android:id="@+id/iv_group_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/iv_arrows_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分组"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxEms="18"
+            android:textColor="@color/cl_333333"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_group_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:padding="5dp"
+            android:text="全部发送"
+            android:textColor="#C7A17D"
+            android:textSize="@dimen/text_12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cl_dddddd"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </com.sunlands.comm_core.weight.expansionpanel.ExpansionHeaderConstraintLayout>
+
+
+    <com.sunlands.comm_core.weight.expansionpanel.ExpansionLayout
+        android:id="@+id/expansionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:expansion_expanded="false">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_child_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </com.sunlands.comm_core.weight.expansionpanel.ExpansionLayout>
+</LinearLayout>

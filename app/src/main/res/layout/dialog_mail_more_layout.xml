@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/shape_more_mail_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/tv_mail_more_content_title"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="全部回复"
+            android:textColor="@color/cl_333333"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_mail_content_more_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/iv_mail_more_content_close" />
+
+        <com.shangde.lepai.uilib.view.RoundImageView
+            android:id="@+id/dialog_riv_mail_userhead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_mail_more_content_title"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_avatar_default" />
+
+        <TextView
+            android:id="@+id/dialog_tv_mail_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dialog_riv_mail_userhead"
+            android:layout_marginLeft="11dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/dialog_riv_mail_userhead"
+            android:text="站内信"
+            android:textColor="@color/cl_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dialog_tv_mail_more_content_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dialog_tv_mail_username"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="14dp"
+            android:text="站内信"
+            android:textColor="@color/cl_999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/dialog_tv_mail_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_tv_mail_username"
+            android:layout_alignLeft="@+id/dialog_tv_mail_username"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="14dp"
+            android:text="您发起的美国汉文大学—MBA专业的入学您发 文大学—MBA专业的入学，您发起的美国汉文 专业的入学您发起的美国汉文大学—M的入"
+            android:textColor="@color/cl_333333"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dialog_rv_mail_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/dialog_tv_mail_content"
+            android:layout_alignLeft="@+id/dialog_tv_mail_username"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="14dp"
+            android:background="#F3F3F5" />
+
+
+        <!--<View-->
+        <!--android:id="@+id/dialog_view_see_more_line"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:layout_marginRight="14dp"-->
+        <!--android:background="@color/cl_dddddd"-->
+        <!--app:layout_constraintLeft_toLeftOf="@id/dialog_tv_mail_username"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/dialog_rv_mail_comment"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/dialog_tv_see_more"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="28dp"-->
+        <!--android:layout_marginRight="14dp"-->
+        <!--android:background="#F3F3F5"-->
+        <!--android:gravity="center"-->
+        <!--android:text="查看更多"-->
+        <!--android:textColor="@color/cl_999999"-->
+        <!--android:textSize="12sp"-->
+        <!--android:visibility="gone"-->
+        <!--app:layout_constraintLeft_toLeftOf="@id/dialog_tv_mail_username"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/dialog_view_see_more_line"-->
+        <!--/>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F8F8F8">
+
+        <TextView
+            android:id="@+id/dialog_et_mail_input_content"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="我要留言"
+            android:paddingLeft="13dp" />
+
+        <ImageView
+            android:id="@+id/dialog_iv_mail_content_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/iv_mail_send_msg" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

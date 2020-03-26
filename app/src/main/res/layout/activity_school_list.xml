@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunlands.intl.yingshi.ui.activity.home.schoollist.view.SchoolListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/layout_common_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/rl_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="地区"
+                        android:textColor="#BE9F64"
+
+                        android:textSize="@dimen/sp_16" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="18dp"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#BE9F64"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ll"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/ll"
+                    android:text="▼"
+                    android:textColor="#BE9F64"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_xuefei"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_xuefei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="费用"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="18dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#BE9F64"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_nandu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_nandu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="难度"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="18dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#BE9F64"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_redu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rudu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="热度"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="18dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#BE9F64"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#252A32" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

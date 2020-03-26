@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_ffffff"
+    android:id="@+id/nsl_report"
+    tools:context="com.sunlands.intl.yingshi.ui.community.view.ReportActivity">
+
+    <include
+        layout="@layout/comm_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_marginLeft="24dp"
+                android:gravity="center"
+                android:text="请选择举报原因"
+                android:textColor="@color/cl_999999"
+                android:textSize="12sp"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_marginLeft="24dp"
+                android:gravity="center"
+                android:text="举证补充说明"
+                android:textColor="@color/cl_999999"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:id="@+id/et_report_content"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/cl_F7F8FA"
+                android:gravity="top|left"
+                android:hint="请输入文字"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:textColorHint="@color/cl_333333"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="56dp"
+                android:gravity="center"
+                android:text="注：正确选择举报类型，将更容易通过审核处理"
+                android:textColor="@color/cl_999999"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

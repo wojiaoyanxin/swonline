@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_ffffff"
+    tools:context="com.sunlands.intl.yingshi.ui.login.view.VerifiCationActivity">
+
+    <include
+        layout="@layout/comm_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_login_send_form_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="验证码已发至15701207408"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.shangde.lepai.uilib.view.vcedittext.VerificationCodeEditText
+        android:id="@+id/vce_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="50dp"
+        android:inputType="number"
+        android:textColor="@color/cl_333333"
+        android:textSize="20sp"
+        app:bottomLineHeight="1dp"
+        app:bottomLineNormalColor="@color/cl_979797"
+        app:bottomLineSelectedColor="@color/cl_D2AA77"
+        app:cursorColor="@color/cl_D2AA77"
+        app:figures="6"
+        app:layout_constraintTop_toBottomOf="@id/tv_login_send_form_phone"
+        app:selectedBackgroundColor="@color/cl_00000000"
+        app:verCodeMargin="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_login_count_down_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="59 秒后可重发"
+        android:textColor="@color/cl_999999"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/vce_et"
+        />
+</android.support.constraint.ConstraintLayout>

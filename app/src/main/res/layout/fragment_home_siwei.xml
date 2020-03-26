@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.sunlands.intl.yingshi.ui.widget.MySwipeRefreshLayout
+
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+
+            android:id="@+id/cdl_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/abl_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentScrim="@color/transparent"
+                    app:layout_scrollFlags="scroll">
+
+                    <!--//头部信息-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <cn.bingoogolapple.bgabanner.BGABanner
+                            android:id="@+id/banner_guide_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:background="@color/cl_282828"
+                            app:banner_indicatorGravity="bottom|center_horizontal"
+                            app:banner_isNeedShowIndicatorOnOnlyOnePage="true"
+                            app:banner_isNumberIndicator="false"
+                            app:banner_numberIndicatorTextColor="@android:color/white"
+                            app:banner_numberIndicatorTextSize="10sp"
+                            app:banner_pageChangeDuration="1000"
+                            app:banner_pointAutoPlayAble="true"
+                            app:banner_pointContainerBackground="@android:color/transparent"
+                            app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+                            app:banner_pointTopBottomMargin="15dp"
+                            app:banner_transitionEffect="alpha" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cd_kechengziliao"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:stateListAnimator="@drawable/shape_home_type"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="10dp"
+                                app:cardUseCompatPadding="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_ziliao"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="15dp"
+                                        android:text="课程资料"
+                                        android:textColor="@color/cl_282828"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_shenru"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_ziliao"
+                                        android:layout_marginLeft="15dp"
+                                        android:text="深入了解每堂课"
+                                        android:textColor="#a0a0a0"
+                                        android:textSize="11sp" />
+
+                                    <View
+                                        android:layout_width="18dp"
+                                        android:layout_height="2dp"
+                                        android:layout_below="@+id/tv_shenru"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="2dp"
+                                        android:background="@color/cl_FF7224" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginTop="15dp"
+                                        android:src="@drawable/ic_home_left" />
+
+
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cd_lianximoshi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:stateListAnimator="@drawable/shape_home_type"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="10dp"
+                                app:cardUseCompatPadding="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_lianxi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="15dp"
+                                        android:text="练习模式"
+                                        android:textColor="@color/cl_282828"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_zhangwo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_lianxi"
+                                        android:layout_marginLeft="15dp"
+                                        android:text="掌握更多知识点"
+                                        android:textColor="#a0a0a0"
+                                        android:textSize="11sp" />
+
+                                    <View
+                                        android:layout_width="18dp"
+                                        android:layout_height="2dp"
+                                        android:layout_below="@+id/tv_zhangwo"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="2dp"
+                                        android:background="@color/cl_FF7224" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginTop="15dp"
+                                        android:src="@drawable/ic_home_right" />
+
+
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的课表"
+                                android:textColor="@color/cl_282828"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_class_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:drawableLeft="@drawable/ic_home_class_type_left"
+                                android:drawablePadding="4dp"
+                                android:gravity="center"
+                                android:text="教师资格证"
+                                android:textColor="@color/cl_FF7224"
+                                android:textSize="12sp" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <!--悬浮的部分-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.shangde.lepai.uilib.indicator.MagicIndicator
+                        android:id="@+id/magic_indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f5f5f5" />
+
+                </LinearLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </com.sunlands.intl.yingshi.ui.widget.MySwipeRefreshLayout>
+
+</FrameLayout>

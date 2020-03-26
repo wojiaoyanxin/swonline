@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="20dp">
+
+    <ImageView
+        android:id="@+id/iv_home_teacher_head"
+        android:layout_width="87dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_teacher_header" />
+
+    <TextView
+        android:id="@+id/iv_home_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/iv_home_teacher_head"
+        android:lines="2"
+        android:text=""
+        android:textColor="@color/cl_282828"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/iv_home_teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_home_class_name"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/iv_home_teacher_head"
+        android:text="讲师:"
+        android:textColor="#a0a0a0"
+        android:textSize="12sp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_home_teacher_head"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ic_home_header_class_bottom_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="课后作业"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="资料"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="06:09:08"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:text="后开始"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

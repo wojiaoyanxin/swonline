@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/shape_bg_complete_userinfo">
+
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/yindao" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:text="完善信息"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_20sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="让同学更了解你"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_14sp" />
+
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/yindao2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv2"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/jump"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_jump"
+                android:gravity="center"
+                android:text="跳过"
+                android:textColor="@color/text999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sure"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_common_home"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/text333"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

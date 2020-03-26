@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginEnd="@dimen/margin_10dp"
+    android:layout_marginStart="@dimen/margin_10dp"
+    android:layout_marginTop="@dimen/margin_14dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.6"
+        android:background="@drawable/bg_item_exam_arrange_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_12dp"
+        android:paddingRight="@dimen/padding_12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_exam_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="160dp"
+                android:text=""
+                android:textColor="@color/text333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_5dp"
+                android:layout_toRightOf="@+id/tv_exam_name"
+                android:elevation="0dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+                <TextView
+                    android:id="@+id/join_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/join"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="已参加"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_20"
+                android:layout_height="@dimen/size_20"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_bell" />
+
+            <TextView
+                android:id="@+id/tv_exam_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/text999"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBackground"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/padding_20dp"
+                android:src="@drawable/reexam" />
+
+            <TextView
+                android:id="@+id/join_exam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingBottom="3dp"
+                android:text="进入答题"
+                android:textColor="@color/text666"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_jiexi"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/padding_40dp"
+                android:src="@drawable/look_jiexi" />
+
+            <TextView
+                android:id="@+id/look_jiexi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingBottom="3dp"
+                android:text="查看解析"
+                android:textColor="@color/textHint"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_item_exam_arrange_black"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="距考试结束"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tv_count_down_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/textColorGolden"
+            android:textSize="@dimen/text_36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

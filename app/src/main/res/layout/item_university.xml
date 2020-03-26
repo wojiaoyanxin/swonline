@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_40dp"
+    android:paddingEnd="@dimen/margin_8dp"
+    android:paddingStart="@dimen/margin_8dp">
+
+    <TextView
+        android:id="@+id/tv_university_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingEnd="@dimen/padding_16dp"
+        android:paddingTop="@dimen/padding_10dp"
+        android:paddingBottom="@dimen/padding_10dp"
+        android:gravity="start|center_vertical"
+        android:text=""/>
+
+</RelativeLayout>

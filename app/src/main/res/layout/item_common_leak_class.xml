@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_other_home_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/home_plan"
+    android:paddingTop="16dp">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/bg_home_class"
+        android:paddingTop="7dp">
+
+        <TextView
+            android:id="@+id/lable"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/text333"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/time"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="2dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/text333"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/text666"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button_common_home"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text=""
+            android:textColor="@color/text333"
+            android:textSize="@dimen/text_13sp" />
+
+        <include layout="@layout/countdown_layout" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/kong"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/wu" />
+
+
+</RelativeLayout>

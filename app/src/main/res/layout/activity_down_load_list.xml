@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunlands.intl.yingshi.ui.my.handout.view.DownLoadListActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_common_header" />
+        <include layout="@layout/layout_header_bottom_line" />
+
+        <com.shangde.lepai.uilib.indicator.MagicIndicator
+            android:id="@+id/magic_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/white" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/select_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/all_select"
+            android:gravity="center"
+            android:paddingBottom="11dp"
+            android:text="全选"
+            android:textColor="@color/text333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/delete_un_enable"
+            android:gravity="center"
+            android:paddingBottom="11dp"
+            android:text="删除"
+            android:textColor="#8D8D8D"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
+

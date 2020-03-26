@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunlands.intl.yingshi.ui.activity.home.studystat.view.StudyStatActivity"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="292dp"
+        android:background="#252A3A" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_study_title"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:paddingTop="24dp">
+
+        <ImageView
+            android:id="@+id/iv_study_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/back_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_study_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="学习统计"
+            android:textColor="@color/cl_ffffff"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_study_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/iv_study_share"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_study_type_week"
+        android:layout_width="147dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="本周"
+        android:textColor="#FDD73D"
+        app:bl_corners_radius="18dp"
+        app:bl_solid_color="@color/cl_161A28"
+        app:bl_stroke_color="@color/cl_161A28"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_study_title" />
+
+    <TextView
+        android:id="@+id/tv_study_type_all"
+        android:layout_width="147dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="26dp"
+        android:gravity="center"
+        android:text="总计"
+        android:textColor="@color/cl_ffffff"
+        app:bl_corners_radius="18dp"
+        app:bl_solid_color="@color/cl_161A28"
+        app:bl_stroke_color="@color/cl_161A28"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_study_title" />
+
+    <View
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/cl_ffffff"
+        app:bl_corners_radius="5dp"
+        app:bl_solid_color="@color/cl_ffffff"
+        app:bl_stroke_color="@color/cl_ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_study_title" />
+
+    <com.shangde.lepai.uilib.view.RoundImageView
+        android:id="@+id/riv_study_user_head"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/ic_avatar_default"
+        android:src="@drawable/ic_avatar_default"
+        app:civ_border_color="@color/cl_ffffff"
+        app:civ_border_width="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/view_content"
+        app:layout_constraintLeft_toLeftOf="@id/view_content"
+        app:layout_constraintRight_toRightOf="@id/view_content" />
+
+    <TextView
+        android:id="@+id/tv_study_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="成为学员第0天"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/riv_study_user_head" />
+
+    <TextView
+        android:id="@+id/tv_study_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="0.0"
+        android:textSize="60sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_study_user_info" />
+
+    <TextView
+        android:id="@+id/tv_study_time_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="学习时长超过0%同学，继续坚持哟"
+        android:textColor="#8c252A3A"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_study_time" />
+
+
+    <TextView
+        android:id="@+id/tv_study_look_class_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:text="01"
+        android:textColor="@color/cl_252A3A"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/view_content"
+        app:layout_constraintEnd_toStartOf="@id/tv_study_homework_num"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@id/view_content" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="完成课时"
+        android:textColor="#8C252A3A"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_study_look_class_num"
+        app:layout_constraintRight_toRightOf="@id/tv_study_look_class_num"
+        app:layout_constraintTop_toBottomOf="@id/tv_study_look_class_num" />
+
+
+    <TextView
+        android:id="@+id/tv_study_homework_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:text="90"
+        android:textColor="@color/cl_252A3A"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/view_content"
+        app:layout_constraintEnd_toStartOf="@+id/tv_study_participation_num"
+        app:layout_constraintLeft_toLeftOf="@id/view_content"
+        app:layout_constraintStart_toEndOf="@id/tv_study_look_class_num" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="完成作业"
+        android:textColor="#8C252A3A"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_study_homework_num"
+        app:layout_constraintRight_toRightOf="@id/tv_study_homework_num"
+        app:layout_constraintTop_toBottomOf="@id/tv_study_homework_num" />
+
+
+    <TextView
+        android:id="@+id/tv_study_participation_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:text="04%"
+        android:textColor="@color/cl_252A3A"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/view_content"
+        app:layout_constraintEnd_toEndOf="@id/view_content"
+        app:layout_constraintLeft_toLeftOf="@id/view_content"
+        app:layout_constraintStart_toEndOf="@id/tv_study_homework_num" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="出勤率"
+        android:textColor="#8C252A3A"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_study_participation_num"
+        app:layout_constraintRight_toRightOf="@id/tv_study_participation_num"
+        app:layout_constraintTop_toBottomOf="@id/tv_study_participation_num" />
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linchart"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/view_content"></com.github.mikephil.charting.charts.LineChart>
+
+</android.support.constraint.ConstraintLayout>

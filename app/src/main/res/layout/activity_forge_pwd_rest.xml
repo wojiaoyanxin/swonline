@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_ffffff"
+    tools:context="com.sunlands.intl.yingshi.ui.login.view.ForgePwdResetActivity"
+    tools:ignore="MissingPrefix">
+
+    <include
+        layout="@layout/comm_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_et_forget_pwd_code_countdown"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="55dp"
+        android:gravity="center"
+        android:text="已发送"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_forget_pwd_input_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="30dp"
+        android:background="@null"
+        android:hint="请输入验证码"
+        android:maxLength="6"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/tv_et_forget_pwd_code_countdown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_et_forget_pwd_code_countdown"
+        app:layout_constraintTop_toTopOf="@id/tv_et_forget_pwd_code_countdown"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/cl_dddddd"
+        app:layout_constraintLeft_toLeftOf="@id/et_forget_pwd_input_code"
+        app:layout_constraintRight_toRightOf="@id/et_forget_pwd_input_code"
+        app:layout_constraintTop_toBottomOf="@id/et_forget_pwd_input_code"
+        />
+
+    <com.shangde.lepai.uilib.view.text.PasswordEditText
+        android:id="@+id/psd_forget_pwd_et"
+        style="@style/PasswordEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@null"
+        android:hint="请设置新密码"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        android:paddingLeft="55dp"
+        android:paddingEnd="55dp"
+        android:textColorHint="@color/cl_999999"
+        app:layout_constraintTop_toBottomOf="@id/et_forget_pwd_input_code"
+        app:password_visible="false"
+        />
+
+    <View
+        android:id="@+id/view2_forget_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="55dp"
+        android:background="@color/cl_dddddd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/psd_forget_pwd_et"
+        />
+
+    <TextView
+        android:id="@+id/tv_forget_pwd_reset"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="55dp"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="16sp"
+        app:bl_corners_radius="22dp"
+        app:bl_pressed_color="@color/cl_D2AA77"
+        app:bl_solid_color="@color/cl_cccccc"
+        app:bl_stroke_color="@color/cl_cccccc"
+        app:bl_unpressed_color="@color/cl_cccccc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2_forget_pwd"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:text="密码为6-12位数字或字母"
+        android:textColor="@color/cl_999999"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_forget_pwd_reset"
+        />
+
+</android.support.constraint.ConstraintLayout>

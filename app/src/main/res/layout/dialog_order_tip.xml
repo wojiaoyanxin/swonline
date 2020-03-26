@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="315dp"
+            android:layout_height="380dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_weixin_notice_dialog"/>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="214dp"
+                    android:text="申请院校课程才可观看课程"
+                    android:textColor="#ff030303"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="253dp"
+                    android:text="请点击下方按钮前往申请"
+                    android:textColor="#ff999999"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_no_apply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/shape_btn_weixin_notice_dialog"
+                        android:paddingBottom="@dimen/padding_10dp"
+                        android:paddingEnd="@dimen/padding_32dp"
+                        android:paddingStart="@dimen/padding_32dp"
+                        android:paddingTop="@dimen/padding_10dp"
+                        android:text="@string/not_apply"
+                        android:textColor="@color/text999"
+                        android:textSize="@dimen/text_14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.08"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_apply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_btn_weixin_notice_dialog"
+                        android:paddingBottom="@dimen/padding_10dp"
+                        android:paddingEnd="@dimen/padding_32dp"
+                        android:paddingStart="@dimen/padding_32dp"
+                        android:paddingTop="@dimen/padding_10dp"
+                        android:text="@string/to_apply"
+                        android:textColor="#ffc7a17d"
+                        android:textSize="@dimen/text_14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.92"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/size_20"
+            android:layout_height="@dimen/size_20"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_weixin_notice_close"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

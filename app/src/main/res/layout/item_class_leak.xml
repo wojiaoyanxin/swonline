@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_plan_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingTop="18dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/class_plan_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:scaleType="fitXY"/>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/class_plan_card"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/text333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/class_plan_card"
+            android:drawableLeft="@drawable/shijian"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#B79372"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/class_plan_card"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/class_plan_card"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="科目："
+            android:textColor="@color/text999"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/root"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ico_waitingbegin"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/kong_rl"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/wu" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

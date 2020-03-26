@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBgGrayF9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_12dp"
+        android:layout_marginStart="@dimen/margin_12dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_14dp"
+            android:paddingEnd="@dimen/padding_14dp"
+            android:paddingStart="@dimen/padding_14dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="85dp"
+                android:src="@drawable/bg_avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.5">
+
+                <ImageView
+                    android:id="@+id/iv_lesson_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="56dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/cl_000000"
+                    android:drawableLeft="@drawable/shape_redpoint_livestate"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:text="直播中"
+                    android:textColor="@color/cl_ffffff"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="@dimen/margin_6dp"
+                    android:background="@drawable/shape_bg_tag"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="@dimen/padding_10dp"
+                    android:paddingStart="@dimen/margin_8dp"
+                    android:paddingTop="3dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_12"
+                        android:layout_height="@dimen/size_12"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_tag_watch_replay"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="看重播"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_10sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_lesson_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:paddingEnd="@dimen/padding_14dp"
+                android:paddingStart="@dimen/padding_14dp"
+                android:text=""
+                android:textColor="@color/text03"
+                android:textSize="@dimen/text_16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.23"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.5" />
+
+            <TextView
+                android:id="@+id/tv_lesson_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingEnd="@dimen/padding_14dp"
+                android:paddingStart="@dimen/padding_14dp"
+                android:text=""
+                android:textColor="@color/text999"
+                android:textSize="@dimen/text_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.76"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.5" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:background="#E9E9E9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_14dp"
+                android:paddingTop="@dimen/padding_14dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_watch_replay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_4dp"
+                        android:src="@drawable/ic_do_homework" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/do_homework"
+                        android:textColor="@color/text333"
+                        android:textSize="@dimen/text_13sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_handout_download"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_14dp"
+                android:paddingTop="@dimen/padding_14dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/download_img_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_4dp"
+                        android:src="@drawable/ic_download_handout" />
+
+                    <TextView
+                        android:id="@+id/download_handout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/download_handout"
+                        android:textColor="@color/text333"
+                        android:textSize="@dimen/text_13sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_quiz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_14dp"
+                android:paddingTop="@dimen/padding_14dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_quiz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_4dp"
+                        android:src="@drawable/ic_quiz" />
+
+                    <TextView
+                        android:id="@+id/tv_quiz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/text333"
+                        android:textSize="@dimen/text_13sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/class_course_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/ico_waitingbegin"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

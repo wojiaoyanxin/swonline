@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/school_news"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:text=""
+        android:textColor="@color/text333"
+        android:textSize="@dimen/text_18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_see_more_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="@string/see_more"
+        android:textColor="@color/colorTextSeeMore"
+        android:textSize="@dimen/text_12sp"
+        android:visibility="gone" />
+</RelativeLayout>

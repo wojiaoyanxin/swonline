@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgGrayF4"
+    android:orientation="vertical"
+    tools:context="com.sunlands.intl.yingshi.ui.my.view.CompanyNameActivity">
+
+
+    <include layout="@layout/layout_common_header" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="请输入公司名称"
+        android:maxLength="20"
+        android:padding="20dp"
+        android:textColor="@color/text333"
+        android:textColorHint="@color/text999"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/counts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="right"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:text="0/20"
+        android:textColor="#dddddd"
+        android:textSize="@dimen/sp_12" />
+
+
+</LinearLayout>

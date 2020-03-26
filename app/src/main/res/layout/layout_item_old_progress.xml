@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingTop="15dp"
+    android:paddingRight="20dp">
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="9dp"
+        android:background="@null"
+        android:button="@drawable/selector_check_bg"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/progressBar"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <com.sunlands.intl.yingshi.ui.widget.HorizontalProgressBarWithNumber
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="9dp"
+            android:layout_toLeftOf="@+id/bt"
+            android:max="100"
+            app:progress_reached_bar_height="4dp"
+            app:progress_reached_color="#C7A17D"
+            app:progress_text_color="#C7A17D"
+            app:progress_text_size="12sp"
+            app:progress_unreached_bar_height="4dp"
+            app:progress_unreached_color="#E7E7E7" />
+
+        <TextView
+            android:id="@+id/fileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:text="0mb"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/bt"
+            style="?buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/progressBar"
+            android:layout_alignTop="@+id/fileSize"
+            android:text="0kb/s"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fileSize"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/progressBar"
+            android:text="删除"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

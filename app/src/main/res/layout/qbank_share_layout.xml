@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="375dp"
+    android:layout_height="667dp"
+    android:background="@drawable/ic_qbank_share">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_qbank_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_qbank_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/bg_attendance_head" />
+
+            <TextView
+                android:id="@+id/tv_qbank_share_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="歪歪，"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_qbank_share"
+                app:layout_constraintLeft_toRightOf="@id/iv_qbank_share"
+                app:layout_constraintTop_toTopOf="@id/iv_qbank_share" />
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tv_qbank_share_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再接再厉"
+            android:textColor="#ffffffff"
+            android:textSize="36sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_qbank_share" />
+
+        <TextView
+            android:id="@+id/tv_qbank_share_subcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="知识点还没掌握哦，加油！"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_qbank_share_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:text="16%"
+            android:textColor="#ffe07428"
+        android:paddingLeft="10dp"
+            android:textSize="32sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_qbank_share_subcontent" />
+
+        <TextView
+            android:id="@+id/tv_qbank_share_answer_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="249dp"
+            android:text="5"
+            android:textColor="#ff282828"
+            android:textSize="22sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_qbank_share_subcontent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text=" 答对题数"
+            android:textColor="#ff9b9b9b"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_qbank_share_answer_num"
+            app:layout_constraintRight_toRightOf="@id/tv_qbank_share_answer_num"
+            app:layout_constraintTop_toBottomOf="@id/tv_qbank_share_answer_num" />
+
+        <TextView
+            android:id="@+id/tv_qbank_share_wrong_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="87dp"
+            android:text="25"
+            android:textColor="#ff282828"
+            android:textSize="22sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_qbank_share_answer_num" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text=" 答错题数"
+            android:textColor="#ff9b9b9b"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_qbank_share_wrong_num"
+            app:layout_constraintRight_toRightOf="@id/tv_qbank_share_wrong_num"
+            app:layout_constraintTop_toBottomOf="@id/tv_qbank_share_wrong_num" />
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

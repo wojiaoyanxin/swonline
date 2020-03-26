@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.community.view.MyFriendActivityActivity">
+
+    <View
+        android:id="@+id/v_my_friend"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:background="@drawable/iv_my_friend_topbg" />
+
+    <ImageView
+        android:id="@+id/iv_my_friend_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/iv_my_friend_back"
+        app:layout_constraintLeft_toLeftOf="@id/v_my_friend"
+        app:layout_constraintTop_toTopOf="@id/v_my_friend" />
+
+    <com.shangde.lepai.uilib.view.RoundImageView
+        android:id="@+id/iv_friend_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_avatar_default"
+        app:layout_constraintLeft_toLeftOf="@id/v_my_friend"
+        app:layout_constraintTop_toBottomOf="@id/iv_my_friend_back" />
+
+    <TextView
+        android:id="@+id/tv_friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="name"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/iv_friend_head"
+        app:layout_constraintTop_toTopOf="@id/iv_friend_head" />
+
+    <TextView
+        android:id="@+id/tv_school_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="9dp"
+        android:text="school"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_friend_head"
+        app:layout_constraintLeft_toRightOf="@id/iv_friend_head" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="182dp"
+        android:background="@color/cl_ffffff"
+        app:bl_corners_topLeftRadius="20dp"
+        app:bl_corners_topRightRadius="20dp"
+        app:bl_solid_color="@color/cl_ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingPrefix">
+
+        <View
+            android:id="@+id/v_sex"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="26dp" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="性     别"
+            android:textColor="@color/cl_999999"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/v_sex"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/v_sex" />
+
+        <TextView
+            android:id="@+id/tv_sex_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:text="男"
+            android:textColor="@color/cl_333333"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/v_sex"
+            app:layout_constraintLeft_toRightOf="@id/tv_sex"
+            app:layout_constraintTop_toTopOf="@id/v_sex" />
+
+
+        <View
+            android:id="@+id/v_industry"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            app:layout_constraintTop_toBottomOf="@id/v_sex" />
+
+        <TextView
+            android:id="@+id/tv_industry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="行     业"
+            android:textColor="@color/cl_999999"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/v_industry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/v_industry" />
+
+        <TextView
+            android:id="@+id/tv_industry_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:text="服务业"
+            android:textColor="@color/cl_333333"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/v_industry"
+            app:layout_constraintLeft_toRightOf="@id/tv_industry"
+            app:layout_constraintTop_toTopOf="@id/v_industry" />
+
+
+        <View
+            android:id="@+id/v_company"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            app:layout_constraintTop_toBottomOf="@id/v_industry" />
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="公     司"
+            android:textColor="@color/cl_999999"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/v_company"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/v_company" />
+
+        <TextView
+            android:id="@+id/tv_company_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:text="尚德机构"
+            android:textColor="@color/cl_333333"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/v_company"
+            app:layout_constraintLeft_toRightOf="@id/tv_company"
+            app:layout_constraintTop_toTopOf="@id/v_company" />
+
+        <View
+            android:id="@+id/v_post"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            app:layout_constraintTop_toBottomOf="@id/v_company" />
+
+        <TextView
+            android:id="@+id/tv_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="职     位"
+            android:textColor="@color/cl_999999"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/v_post"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/v_post" />
+
+        <TextView
+            android:id="@+id/tv_post_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:text="技术"
+            android:textColor="@color/cl_333333"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/v_post"
+            app:layout_constraintLeft_toRightOf="@id/tv_post"
+            app:layout_constraintTop_toTopOf="@id/v_post" />
+
+        <View
+            android:id="@+id/v_land"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            app:layout_constraintTop_toBottomOf="@id/v_post" />
+
+        <TextView
+            android:id="@+id/tv_land"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="常驻地"
+            android:textColor="@color/cl_999999"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/v_land"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/v_land" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:text=""
+            android:textColor="@color/cl_333333"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/v_land"
+            app:layout_constraintLeft_toRightOf="@id/tv_land"
+            app:layout_constraintTop_toTopOf="@id/v_land" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/cl_F7F8FA"
+        app:layout_constraintBottom_toBottomOf="@+id/cl" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_ffffff"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="TA的动态"
+        android:textColor="@color/cl_252A3A"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+
+</android.support.constraint.ConstraintLayout>
