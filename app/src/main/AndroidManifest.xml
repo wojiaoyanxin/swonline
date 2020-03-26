@@ -32,7 +32,6 @@
 
     <application
         android:resizeableActivity="false"
-        android:theme="@style/AppTheme"
         tools:targetApi="n">
         <!--        android:name=".App"-->
         <!--        android:allowBackup="true"-->
