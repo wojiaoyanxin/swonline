@@ -31,16 +31,18 @@
         tools:ignore="ProtectedPermissions" />
 
     <application
-        android:name=".App"
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
         android:resizeableActivity="false"
-        android:roundIcon="@drawable/ic_launcher"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:name"
         tools:targetApi="n">
+        <!--        android:name=".App"-->
+        <!--        android:allowBackup="true"-->
+        <!--        android:icon="@drawable/ic_launcher"-->
+        <!--        android:label="@string/app_name"-->
+        <!--        android:roundIcon="@drawable/ic_launcher"-->
+        <!--        android:supportsRtl="true"-->
+        <!--        android:theme="@style/AppTheme"-->
+        <!--        tools:replace="android:name"-->
+        <!--        tools:targetApi="n"-->
         <activity android:name=".ui.my.handout.view.OldHandoutActivity"></activity>
         <activity android:name=".ui.my.handout.view.OldDownLoadingActivity" />
         <activity android:name=".ui.my.handout.view.DownLoadingActivity" />
